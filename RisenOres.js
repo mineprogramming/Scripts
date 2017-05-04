@@ -17,7 +17,8 @@ for(var i = 0; i < ores.length; i++){
 
 function destroyBlock(x, y, z, side){
   var enches = Player.getEnchantments(
-    Player.getSelectedSlotId())
+    Player.getSelectedSlotId());
+  if(enches == null) return;
   for(var i = 0; i < enches.length; i++)
     if(enches[i].type == Enchantment.SILK_TOUCH)
       return;
