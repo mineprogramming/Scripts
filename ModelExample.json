@@ -1,0 +1,49 @@
+{
+    "model":[
+        {
+            "name":"body",
+            "offset":[0, 0, 0],
+            "rotation":[0, 0, 0],
+            "children":[
+                //...
+            ],
+            "boxes":[
+                {
+                    "position":[0, 0, 0],
+                    "size":[1, 1, 1],
+                    "uv":[10, 10],
+                    "animation":{
+                        // work in progress...
+                    }
+                },
+                {
+                    //...
+                }
+            ],
+            "animation":{
+                // work in progress...
+            }
+        },
+        {
+            "name":"head"
+            //...
+        },
+        {
+            "name":"rightArm"
+            //...
+        },
+        {
+            "name":"leftArm"
+            //...
+        },
+        {
+            "name":"rightLeg"
+            //...
+        },
+        {
+            "name":"leftLeg"
+            //...
+        }
+    ],
+    "scale": 1
+}
