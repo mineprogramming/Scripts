@@ -11,7 +11,7 @@
                 {
                     "position":[0, 0, 0],
                     "size":[1, 1, 1],
-                    "textureSize": [1, 1],
+                    "textureSize": [32, 64],
                     "uv":[10, 10],
                     "animation":{
                         // work in progress...
