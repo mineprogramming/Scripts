@@ -1,0 +1,9 @@
+nide-api:1
+project-name:ThirstTest
+project-version:1.0.0
+project-type:MODPE
+settings-compress:false
+settings-mode:modpkg
+
+include-library:nide/Timers
+
