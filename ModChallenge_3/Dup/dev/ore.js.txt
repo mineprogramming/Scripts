@@ -1,0 +1,15 @@
+var BLOCK_TYPE_LIGHT = Block.createSpecialType({
+base: 1,
+lightlevel: 15
+}); 
+IDRegistry.genBlockID("cristalOre"); 
+Block.createBlock("cristalOre", [{name:"Cristal ore", texture:[["ore",0]], inCreative:  true}], 
+BLOCK_TYPE_LIGHT);
+
+Block.registerDropFunction("cristalOre", function(coords, id, data, diggingLevel, toolLevel){ return [[ItemID.cristal, 1, 0]];}); 
+
+Callback.addCallback("GenerateChunkUnderground", function(chunkX, chunkZ){
+for(var i=0;i<10;i++){
+var coords = GenerationUtils.randomCoords(chunkX, chunkZ, 2, 40);
+GenerationUtils.generateOre(coords.x, coords.y, coords.z, BlockID.cristalOre, 4, 10);
+}});
