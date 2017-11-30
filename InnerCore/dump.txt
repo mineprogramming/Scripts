@@ -1,0 +1,2265 @@
+__mod__ - unknown
+__name__ - string(DumpMaker)
+__dir__ - string(/storage/emulated/0/games/com.mojang/mods/DumpMaker/)
+__config__ - unknown
+__debug_typecheck__null 
+runCustomSourcenull 
+importLibnull 
+getCoreAPILevel () 
+runOnMainThread (func) 
+getMCPEVersion getMCPEVersion() 
+Debug.sysTime () 
+Debug.addParticle (x, y, z, id, vx, vy, vz, data) 
+Debug.message (message) 
+Debug.warning (message) 
+Debug.error (message) 
+Debug.m () 
+Debug.bitmap (bitmap, title) 
+
+FileTools.mntdir - string(/mnt)
+FileTools.root - string(/storage/emulated/0/)
+FileTools.workdir - string(games/com.mojang/coreengine/)
+FileTools.moddir - string(games/com.mojang/mods/)
+FileTools.modpedir - string(games/com.mojang/modpe/)
+FileTools.mkdir (dir) 
+FileTools.mkworkdirs () 
+FileTools.getFullPath (path) 
+FileTools.isExists (path) 
+FileTools.WriteText (file, text, add) 
+FileTools.ReadText (file) 
+FileTools.WriteImage (file, bitmap) 
+FileTools.ReadImage (file) 
+FileTools.ReadTextAsset (name) 
+FileTools.ReadImageAsset (name) 
+FileTools.ReadBytesAsset (name) 
+FileTools.GetListOfDirs (path) 
+FileTools.GetListOfFiles (path, ext) 
+FileTools.ReadKeyValueFile (dir, specialSeparator) 
+FileTools.WriteKeyValueFile (dir, data, specialSeparator) 
+FileTools.ReadJSON (dir) 
+FileTools.WriteJSON (dir, obj, beautify) 
+
+Threading.formatFatalErrorMessage (error, name, priority, formatFunc) 
+Threading.initThread (name, func, priority, isErrorFatal, formatFunc) 
+Threading.getThread (name) 
+
+Config[JavaClass zhekasmirnov.launcher.api.mod.adaptedscript.AdaptedScriptAPI$Config] 
+TileEntity.resetEngine () 
+TileEntity.registerPrototype (blockID, customPrototype) 
+TileEntity.getPrototype (blockID) 
+TileEntity.isTileEntityBlock (blockID) 
+TileEntity.createTileEntityForPrototype (Prototype, addToUpdate) 
+TileEntity.addTileEntity (x, y, z) 
+TileEntity.addUpdatableAsTileEntity (updatable) 
+TileEntity.getTileEntity (x, y, z) 
+TileEntity.destroyTileEntity (tileEntity) 
+TileEntity.destroyTileEntityAtCoords (x, y, z) 
+TileEntity.isTileEntityLoaded (tileEntity) 
+TileEntity.checkTileEntityForIndex (index) 
+TileEntity.CheckTileEntities () 
+TileEntity.DeployDestroyChecker (tileEntity) 
+
+MobRegistry.registerEntity (name) 
+MobRegistry.registerUpdatableAsEntity (updatable) 
+MobRegistry.spawnEntityAsPrototype (typeName, coords, extraData) 
+MobRegistry.getEntityUpdatable (entity) 
+MobRegistry.registerNativeEntity (entity) 
+MobRegistry.registerEntityRemove (entity) 
+MobRegistry.resetEngine () 
+
+MobSpawnRegistry.registerSpawn (entityType, rarity, condition, denyNaturalDespawn) 
+MobSpawnRegistry.getRandomSpawn (rarityMultiplier) 
+MobSpawnRegistry.getRandPosition () 
+MobSpawnRegistry.executeSpawn (spawn, position) 
+MobSpawnRegistry.counter - number(0)
+MobSpawnRegistry.tick () 
+MobSpawnRegistry.onChunkGenerated (x, z) 
+
+GameObject GameObject(name, Prototype) 
+GameObjectRegistry.genUniqueName (name) 
+GameObjectRegistry.registerClass (gameObjectClass) 
+GameObjectRegistry.deployGameObject (gameobject) 
+GameObjectRegistry.addGameObject (gameobject) 
+GameObjectRegistry.removeGameObject (gameobject) 
+GameObjectRegistry.resetEngine () 
+GameObjectRegistry.getAllByType (type, clone) 
+GameObjectRegistry.callForType () 
+GameObjectRegistry.callForTypeSafe () 
+
+ModAPI.registerAPI (name, api, descr) 
+ModAPI.requireAPI (name) 
+ModAPI.requireGlobal (name) 
+ModAPI.requireAPIdoc (name) 
+ModAPI.requireAPIPropertyDoc (name, prop) 
+ModAPI.getModByName (modName) 
+ModAPI.isModLoaded (modName) 
+ModAPI.addAPICallback (apiName, func) 
+ModAPI.addModCallback (modName, func) 
+ModAPI.getModList () 
+ModAPI.getModPEList () 
+ModAPI.addTexturePack (path) 
+ModAPI.cloneAPI (api, deep) 
+ModAPI.inheritPrototypes (source, target) 
+ModAPI.cloneObject (source, deep, rec) 
+ModAPI.debugCloneObject (source, deep, rec) 
+
+Saver.addSavesScope (name, loadFunc, saveFunc) 
+Saver.registerScopeSaver (name, saver) 
+Saver.registerObjectSaver (name, saver) 
+Saver.registerObject (obj, saverId) 
+Saver.setObjectIgnored (obj, ignore) 
+
+World.isLoaded - boolean(false)
+World.setLoaded (isLoaded) 
+World.isWorldLoaded () 
+World.getThreadTime () 
+World.__inworld.nativeSetBlock (x, y, z, id, data) 
+World.__inworld.nativeGetBlockID (x, y, z) 
+World.__inworld.nativeGetBlockData (x, y, z) 
+World.__inworld.setBlocknull 
+World.__inworld.setFullBlock (x, y, z, fullTile) 
+World.__inworld.getBlock (x, y, z) 
+World.__inworld.getBlockIDnull 
+World.__inworld.getBlockDatanull 
+World.__inworld.destroyBlock (x, y, z, drop) 
+World.__inworld.getLightLevelnull 
+World.__inworld.isChunkLoaded (x, z) 
+World.__inworld.isChunkLoadedAt (x, y, z) 
+World.__inworld.getTileEntity (x, y, z) 
+World.__inworld.addTileEntity (x, y, z) 
+World.__inworld.removeTileEntity (x, y, z) 
+World.__inworld.getContainer (x, y, z) 
+World.__inworld.getWorldTime () 
+World.__inworld.setWorldTime (time) 
+World.__inworld.setDayMode (day) 
+World.__inworld.setNightMode (night) 
+World.__inworld.getWeather () 
+World.__inworld.setWeather (weather) 
+World.__inworld.drop (x, y, z, id, count, data) 
+World.__inworld.explode (x, y, z, power, someBoolean) 
+World.__inworld.getBiome (x, z) 
+World.__inworld.getBiomeName (x, z) 
+World.__inworld.getGrassColor (x, z) 
+World.__inworld.setGrassColor (x, z, color) 
+World.__inworld.getGrassColorRGB (x, z) 
+World.__inworld.setGrassColorRGB (x, z, rgb) 
+World.__inworld.playSound (x, y, z, name, volume, pitch) 
+World.__inworld.playSoundAtEntity (entity, name, volume, pitch) 
+
+World.__inmenu.nativeSetBlock () 
+World.__inmenu.nativeGetBlockID () 
+World.__inmenu.nativeGetBlockData (x, y, z) 
+World.__inmenu.setBlock (x, y, z, id, data) 
+World.__inmenu.setFullBlock (x, y, z, fullTile) 
+World.__inmenu.getBlock (x, y, z) 
+World.__inmenu.getBlockID (x, y, z) 
+World.__inmenu.getBlockData (x, y, z) 
+World.__inmenu.destroyBlock (x, y, z, drop) 
+World.__inmenu.getLightLevel (x, y, z) 
+World.__inmenu.isChunkLoaded (x, z) 
+World.__inmenu.isChunkLoadedAt (x, y, z) 
+World.__inmenu.getTileEntity (x, y, z) 
+World.__inmenu.addTileEntity (x, y, z) 
+World.__inmenu.removeTileEntity (x, y, z) 
+World.__inmenu.getContainer (x, y, z) 
+World.__inmenu.getWorldTime () 
+World.__inmenu.setWorldTime (time) 
+World.__inmenu.setDayMode (day) 
+World.__inmenu.setNightMode (night) 
+World.__inmenu.getWeather () 
+World.__inmenu.setWeather (weather) 
+World.__inmenu.drop (x, y, z, id, count, data) 
+World.__inmenu.explode (x, y, z, power, someBoolean) 
+World.__inmenu.getBiome (x, z) 
+World.__inmenu.getBiomeName (x, z) 
+World.__inmenu.getGrassColor (x, z) 
+World.__inmenu.setGrassColor (x, z, color) 
+World.__inmenu.getGrassColorRGB (x, z) 
+World.__inmenu.setGrassColorRGB (x, z, rgb) 
+World.__inmenu.canSeeSky (x, y, z) 
+World.__inmenu.playSound (x, y, z, name, volume, pitch) 
+World.__inmenu.playSoundAtEntity (entity, name, volume, pitch) 
+
+World.nativeSetBlock () 
+World.nativeGetBlockID () 
+World.nativeGetBlockData (x, y, z) 
+World.setBlock (x, y, z, id, data) 
+World.setFullBlock (x, y, z, fullTile) 
+World.getBlock (x, y, z) 
+World.getBlockID (x, y, z) 
+World.getBlockData (x, y, z) 
+World.destroyBlock (x, y, z, drop) 
+World.getLightLevel (x, y, z) 
+World.isChunkLoaded (x, z) 
+World.isChunkLoadedAt (x, y, z) 
+World.getTileEntity (x, y, z) 
+World.addTileEntity (x, y, z) 
+World.removeTileEntity (x, y, z) 
+World.getContainer (x, y, z) 
+World.getWorldTime () 
+World.setWorldTime (time) 
+World.setDayMode (day) 
+World.setNightMode (night) 
+World.getWeather () 
+World.setWeather (weather) 
+World.drop (x, y, z, id, count, data) 
+World.explode (x, y, z, power, someBoolean) 
+World.getBiome (x, z) 
+World.getBiomeName (x, z) 
+World.getGrassColor (x, z) 
+World.setGrassColor (x, z, color) 
+World.getGrassColorRGB (x, z) 
+World.setGrassColorRGB (x, z, rgb) 
+World.canSeeSky (x, y, z) 
+World.playSound (x, y, z, name, volume, pitch) 
+World.playSoundAtEntity (entity, name, volume, pitch) 
+
+Entity.getAll () 
+Entity.getAllJS () 
+Entity.EXTRA_DATA_PREFIX - string(core.engine.)
+Entity.getExtra (ent, name) 
+Entity.putExtra (ent, name, extra) 
+Entity.getExtraJson (ent, name) 
+Entity.putExtraJson (ent, name, obj) 
+Entity.addEffect (ent, effectId, effectTime, effectData, amplifier, particles) 
+Entity.clearEffect (ent, id) 
+Entity.clearEffects (ent) 
+Entity.damageEntity (ent, damage, cause, params) 
+Entity.healEntity (ent, heal) 
+Entity.getType (ent) 
+Entity.setHitbox (ent, w, h) 
+Entity.isExist (entity) 
+Entity.spawn (x, y, z, type, skin) 
+Entity.spawnCustom (name, x, y, z, extra) 
+Entity.spawnCustomAtCoords (name, coords, extra) 
+Entity.spawnAtCoords (coords, type, skin) 
+Entity.remove (entity) 
+Entity.getCustom (entity) 
+Entity.getAge (ent) 
+Entity.setAge (ent, age) 
+Entity.getSkin (ent) 
+Entity.setSkin (ent, skin) 
+Entity.setTexture (ent, texture) 
+Entity.getRender (ent) 
+Entity.setRender (ent, render) 
+Entity.rideAnimal (ent1, ent2) 
+Entity.getNameTag (ent) 
+Entity.setNameTag (ent, tag) 
+Entity.getTarget (ent) 
+Entity.setTarget (ent, target) 
+Entity.getMobile (ent, mobile) 
+Entity.setMobile (ent, mobile) 
+Entity.getSneaking (ent) 
+Entity.setSneaking (ent, sneak) 
+Entity.getRider (ent) 
+Entity.getRiding (ent) 
+Entity.setFire (ent, fire, force) 
+Entity.health (entity) 
+Entity.getHealth (ent) 
+Entity.setHealth (ent, health) 
+Entity.getMaxHealth (ent) 
+Entity.setMaxHealth (ent, health) 
+Entity.setPosition (ent, x, y, z) 
+Entity.getPosition (ent) 
+Entity.addPosition (ent, x, y, z) 
+Entity.setVelocity (ent, x, y, z) 
+Entity.getVelocity (ent) 
+Entity.addVelocity (ent, x, y, z) 
+Entity.getDistanceBetweenCoords (coords1, coords2) 
+Entity.getDistanceToCoords (ent, coords) 
+Entity.getDistanceToEntity (ent1, ent2) 
+Entity.getXZPlayerDis (entity) 
+Entity.getLookAngle (ent) 
+Entity.setLookAngle (ent, yaw, pitch) 
+Entity.getLookVectorByAngle (angle) 
+Entity.getLookVector (ent) 
+Entity.getLookAt (ent, x, y, z) 
+Entity.lookAt (ent, x, y, z) 
+Entity.lookAtCoords (ent, coords) 
+Entity.moveToTarget (ent, target, params) 
+Entity.moveToAngle (ent, angle, params) 
+Entity.moveToLook (ent, params) 
+Entity.getMovingVector (ent) 
+Entity.getMovingAngle (ent) 
+Entity.getMovingAngleByPositions (pos1, pos2) 
+Entity.findNearest (coords, type, maxRange) 
+Entity.getAllInRange (coords, maxRange, type) 
+Entity.getInventory (ent, handleNames, handleEnchant) 
+Entity.getArmorSlot (ent, slot) 
+Entity.setArmorSlot (ent, slot, id, count, data) 
+Entity.getCarriedItem (ent, handleEnchant, handleNames) 
+Entity.setCarriedItem (ent, id, count, data, enchant, name) 
+Entity.getDroppedItem (ent) 
+Entity.setDroppedItem (ent, id, count, data) 
+Entity.getProjectileItem (projectile) 
+
+Player.get () 
+Player.getNameForEnt (ent) 
+Player.getName () 
+Player.getDimension () 
+Player.isPlayer (ent) 
+Player.getPointed () 
+Player.getInventory (loadPart, handleEnchant, handleNames) 
+Player.addItemToInventory (id, count, data) 
+Player.getCarriedItem (handleEnchant, handleNames) 
+Player.setCarriedItem (id, count, data, enchant, name) 
+Player.decreaseCarriedItem (count) 
+Player.getInventorySlot (slot) 
+Player.setInventorySlot (slot, id, count, data) 
+Player.getArmorSlot (slot) 
+Player.setArmorSlot (slot, id, count, data) 
+Player.getSelectedSlotId () 
+Player.setSelectedSlotId (slot) 
+Player.setPosition (x, y, z) 
+Player.getPosition () 
+Player.addPosition (x, y, z) 
+Player.setVelocity (x, y, z) 
+Player.getVelocity () 
+Player.addVelocity (x, y, z) 
+Player.experience () 
+Player.getExperience () 
+Player.setExperience (exp) 
+Player.addExperience (exp) 
+Player.level () 
+Player.getLevel () 
+Player.setLevel (level) 
+Player.addLevel (level) 
+Player.flying () 
+Player.getFlyingEnabled () 
+Player.setFlyingEnabled (enabled) 
+Player.getFlying () 
+Player.setFlying (enabled) 
+Player.exhaustion () 
+Player.getExhaustion () 
+Player.setExhaustion (value) 
+Player.hunger () 
+Player.getHunger () 
+Player.setHunger (value) 
+Player.saturation () 
+Player.getSaturation () 
+Player.setSaturation (value) 
+Player.health () 
+Player.getHealth () 
+Player.setHealth (value) 
+Player.score () 
+Player.getScore () 
+
+Game.prevent () 
+Game.message (msg) 
+Game.tipMessage (msg) 
+Game.dialogMessage (message, title) 
+Game.setDifficulty (difficulty) 
+Game.getDifficulty () 
+Game.getMinecraftVersion () 
+Game.getEngineVersion () 
+
+Render RenderAPI(params) 
+Texture Texture(path) 
+EntityModel ModelAPI(parentModel) 
+EntityModelWatcher ModelWatcher(entity, model) 
+EntityAIClass EntityAI(customPrototype) 
+EntityAIWatcher EntityAIWatcher(customPrototype) 
+EntityAI.Idle.getDefaultPriority () 
+EntityAI.Idle.getDefaultName () 
+EntityAI.Idle.setParams (params) 
+EntityAI.Idle.executionStarted () 
+EntityAI.Idle.executionEnded () 
+EntityAI.Idle.executionPaused () 
+EntityAI.Idle.executionResumed () 
+EntityAI.Idle.execute () 
+EntityAI.Idle.__execute () 
+EntityAI.Idle.setExecutionTimer (timer) 
+EntityAI.Idle.removeExecutionTimer () 
+EntityAI.Idle.data.executionTimer - number(-1)
+
+EntityAI.Idle.isInstance - boolean(false)
+EntityAI.Idle.instantiate (parent, name) 
+EntityAI.Idle.aiEntityChanged (entity) 
+EntityAI.Idle.finishExecution () 
+EntityAI.Idle.changeSelfPriority (priority) 
+EntityAI.Idle.enableAI (name, priority, extra) 
+EntityAI.Idle.disableAI (name) 
+EntityAI.Idle.setPriority (name, priority) 
+EntityAI.Idle.getAI (name) 
+EntityAI.Idle.getPriority (name) 
+EntityAI.Idle.attackedBy (entity) 
+EntityAI.Idle.hurtBy (entity) 
+EntityAI.Idle.projectileHit (projectile) 
+EntityAI.Idle.death (entity) 
+EntityAI.Idle.getDefaultPrioriy () 
+
+EntityAI.Follow.getDefaultPriority () 
+EntityAI.Follow.getDefaultName () 
+EntityAI.Follow.params.speed - number(0.2)
+EntityAI.Follow.params.jumpVel - number(0.45)
+EntityAI.Follow.params.rotateSpeed - number(0.4)
+EntityAI.Follow.params.rotateRatio - number(0.5)
+EntityAI.Follow.params.rotateHead - boolean(true)
+EntityAI.Follow.params.denyY - boolean(true)
+
+EntityAI.Follow.setParams (params) 
+EntityAI.Follow.executionStarted () 
+EntityAI.Follow.executionEnded () 
+EntityAI.Follow.executionPaused () 
+EntityAI.Follow.executionResumed () 
+EntityAI.Follow.execute () 
+EntityAI.Follow.__execute () 
+EntityAI.Follow.setExecutionTimer (timer) 
+EntityAI.Follow.removeExecutionTimer () 
+EntityAI.Follow.data.movingYaw - number(0)
+
+EntityAI.Follow.isInstance - boolean(false)
+EntityAI.Follow.instantiate (parent, name) 
+EntityAI.Follow.aiEntityChanged (entity) 
+EntityAI.Follow.finishExecution () 
+EntityAI.Follow.changeSelfPriority (priority) 
+EntityAI.Follow.enableAI (name, priority, extra) 
+EntityAI.Follow.disableAI (name) 
+EntityAI.Follow.setPriority (name, priority) 
+EntityAI.Follow.getAI (name) 
+EntityAI.Follow.getPriority (name) 
+EntityAI.Follow.attackedBy (entity) 
+EntityAI.Follow.hurtBy (entity) 
+EntityAI.Follow.projectileHit (projectile) 
+EntityAI.Follow.death (entity) 
+
+EntityAI.Panic.getDefaultPriority () 
+EntityAI.Panic.getDefaultName () 
+EntityAI.Panic.params.speed - number(0.22)
+EntityAI.Panic.params.angular_speed - number(0.5)
+
+EntityAI.Panic.setParams (params) 
+EntityAI.Panic.executionStarted () 
+EntityAI.Panic.executionEnded () 
+EntityAI.Panic.executionPaused () 
+EntityAI.Panic.executionResumed () 
+EntityAI.Panic.execute () 
+EntityAI.Panic.__execute () 
+EntityAI.Panic.setExecutionTimer (timer) 
+EntityAI.Panic.removeExecutionTimer () 
+EntityAI.Panic.data.yaw - number(0)
+EntityAI.Panic.data.add - number(0)
+
+EntityAI.Panic.isInstance - boolean(false)
+EntityAI.Panic.instantiate (parent, name) 
+EntityAI.Panic.aiEntityChanged (entity) 
+EntityAI.Panic.finishExecution () 
+EntityAI.Panic.changeSelfPriority (priority) 
+EntityAI.Panic.enableAI (name, priority, extra) 
+EntityAI.Panic.disableAI (name) 
+EntityAI.Panic.setPriority (name, priority) 
+EntityAI.Panic.getAI (name) 
+EntityAI.Panic.getPriority (name) 
+EntityAI.Panic.attackedBy (entity) 
+EntityAI.Panic.hurtBy (entity) 
+EntityAI.Panic.projectileHit (projectile) 
+EntityAI.Panic.death (entity) 
+EntityAI.Panic.randomize () 
+
+EntityAI.Wander.getDefaultPriority () 
+EntityAI.Wander.getDefaultName () 
+EntityAI.Wander.params.speed - number(0.08)
+EntityAI.Wander.params.angular_speed - number(0.1)
+EntityAI.Wander.params.delay_weight - number(0.3)
+
+EntityAI.Wander.setParams (params) 
+EntityAI.Wander.executionStarted () 
+EntityAI.Wander.executionEnded () 
+EntityAI.Wander.executionPaused () 
+EntityAI.Wander.executionResumed () 
+EntityAI.Wander.execute () 
+EntityAI.Wander.__execute () 
+EntityAI.Wander.setExecutionTimer (timer) 
+EntityAI.Wander.removeExecutionTimer () 
+EntityAI.Wander.data.yaw - number(0)
+EntityAI.Wander.data.add - number(0)
+EntityAI.Wander.data.delay - boolean(false)
+EntityAI.Wander.data._delay - boolean(true)
+
+EntityAI.Wander.isInstance - boolean(false)
+EntityAI.Wander.instantiate (parent, name) 
+EntityAI.Wander.aiEntityChanged (entity) 
+EntityAI.Wander.finishExecution () 
+EntityAI.Wander.changeSelfPriority (priority) 
+EntityAI.Wander.enableAI (name, priority, extra) 
+EntityAI.Wander.disableAI (name) 
+EntityAI.Wander.setPriority (name, priority) 
+EntityAI.Wander.getAI (name) 
+EntityAI.Wander.getPriority (name) 
+EntityAI.Wander.attackedBy (entity) 
+EntityAI.Wander.hurtBy (entity) 
+EntityAI.Wander.projectileHit (projectile) 
+EntityAI.Wander.death (entity) 
+EntityAI.Wander.randomize () 
+
+EntityAI.Attack.getDefaultPriority () 
+EntityAI.Attack.getDefaultName () 
+EntityAI.Attack.params.attack_damage - number(5)
+EntityAI.Attack.params.attack_range - number(2.5)
+EntityAI.Attack.params.attack_rate - number(12)
+
+EntityAI.Attack.setParams (params) 
+EntityAI.Attack.executionStarted () 
+EntityAI.Attack.executionEnded () 
+EntityAI.Attack.executionPaused () 
+EntityAI.Attack.executionResumed () 
+EntityAI.Attack.execute () 
+EntityAI.Attack.__execute () 
+EntityAI.Attack.setExecutionTimer (timer) 
+EntityAI.Attack.removeExecutionTimer () 
+EntityAI.Attack.data.timer - number(0)
+
+EntityAI.Attack.isInstance - boolean(false)
+EntityAI.Attack.instantiate (parent, name) 
+EntityAI.Attack.aiEntityChanged (entity) 
+EntityAI.Attack.finishExecution () 
+EntityAI.Attack.changeSelfPriority (priority) 
+EntityAI.Attack.enableAI (name, priority, extra) 
+EntityAI.Attack.disableAI (name) 
+EntityAI.Attack.setPriority (name, priority) 
+EntityAI.Attack.getAI (name) 
+EntityAI.Attack.getPriority (name) 
+EntityAI.Attack.attackedBy (entity) 
+EntityAI.Attack.hurtBy (entity) 
+EntityAI.Attack.projectileHit (projectile) 
+EntityAI.Attack.death (entity) 
+
+EntityAI.Swim.getDefaultPriority () 
+EntityAI.Swim.getDefaultName () 
+EntityAI.Swim.params.velocity - number(0.2)
+
+EntityAI.Swim.setParams (params) 
+EntityAI.Swim.executionStarted () 
+EntityAI.Swim.executionEnded () 
+EntityAI.Swim.executionPaused () 
+EntityAI.Swim.executionResumed () 
+EntityAI.Swim.execute () 
+EntityAI.Swim.__execute () 
+EntityAI.Swim.setExecutionTimer (timer) 
+EntityAI.Swim.removeExecutionTimer () 
+EntityAI.Swim.data.executionTimer - number(-1)
+
+EntityAI.Swim.isInstance - boolean(false)
+EntityAI.Swim.instantiate (parent, name) 
+EntityAI.Swim.aiEntityChanged (entity) 
+EntityAI.Swim.finishExecution () 
+EntityAI.Swim.changeSelfPriority (priority) 
+EntityAI.Swim.enableAI (name, priority, extra) 
+EntityAI.Swim.disableAI (name) 
+EntityAI.Swim.setPriority (name, priority) 
+EntityAI.Swim.getAI (name) 
+EntityAI.Swim.getPriority (name) 
+EntityAI.Swim.attackedBy (entity) 
+EntityAI.Swim.hurtBy (entity) 
+EntityAI.Swim.projectileHit (projectile) 
+EntityAI.Swim.death (entity) 
+EntityAI.Swim.inWater - boolean(false)
+
+EntityAI.PanicWatcher.getDefaultPriority () 
+EntityAI.PanicWatcher.getDefaultName () 
+EntityAI.PanicWatcher.params.panic_time - number(200)
+EntityAI.PanicWatcher.params.priority_panic - number(5)
+EntityAI.PanicWatcher.params.priority_default - number(1)
+EntityAI.PanicWatcher.params.name - string(panic)
+
+EntityAI.PanicWatcher.setParams (params) 
+EntityAI.PanicWatcher.executionStarted () 
+EntityAI.PanicWatcher.executionEnded () 
+EntityAI.PanicWatcher.executionPaused () 
+EntityAI.PanicWatcher.executionResumed () 
+EntityAI.PanicWatcher.execute () 
+EntityAI.PanicWatcher.__execute () 
+EntityAI.PanicWatcher.setExecutionTimer (timer) 
+EntityAI.PanicWatcher.removeExecutionTimer () 
+EntityAI.PanicWatcher.data.timer - number(-1)
+
+EntityAI.PanicWatcher.isInstance - boolean(false)
+EntityAI.PanicWatcher.instantiate (parent, name) 
+EntityAI.PanicWatcher.aiEntityChanged (entity) 
+EntityAI.PanicWatcher.finishExecution () 
+EntityAI.PanicWatcher.changeSelfPriority (priority) 
+EntityAI.PanicWatcher.enableAI (name, priority, extra) 
+EntityAI.PanicWatcher.disableAI (name) 
+EntityAI.PanicWatcher.setPriority (name, priority) 
+EntityAI.PanicWatcher.getAI (name) 
+EntityAI.PanicWatcher.getPriority (name) 
+EntityAI.PanicWatcher.attackedBy (entity) 
+EntityAI.PanicWatcher.hurtBy () 
+EntityAI.PanicWatcher.projectileHit (projectile) 
+EntityAI.PanicWatcher.death (entity) 
+
+
+GenerationUtils.isTerrainBlock (id) 
+GenerationUtils.isTransparentBlock (id) 
+GenerationUtils.canSeeSky (x, y, z) 
+GenerationUtils.randomXZ (cx, cz) 
+GenerationUtils.randomCoords (cx, cz, lowest, highest) 
+GenerationUtils.findSurface (x, y, z) 
+GenerationUtils.findHighSurface (x, z) 
+GenerationUtils.findLowSurface (x, z) 
+GenerationUtils.__lockedReal.id - number(0)
+GenerationUtils.__lockedReal.data - number(0)
+
+GenerationUtils.lockInBlock (id, data, checkerTile, checkerMode) 
+GenerationUtils.setLockedBlock (x, y, z) 
+GenerationUtils.genMinable (x, y, z, params) 
+GenerationUtils.generateOre (x, y, z, id, data, amount, noStoneCheck) 
+
+Animation.base AnimationBase(x, y, z) 
+Animation.Base AnimationBase(x, y, z) 
+Animation.item AnimationItem(x, y, z) 
+Animation.Item AnimationItem(x, y, z) 
+
+Particles.addParticlenull 
+Particles.addFarParticlenull 
+Particles.line (particle, coords1, coords2, gap, vel, data) 
+
+
+Block.dropFunctions.1 (coords, id, data, level, enchant) 
+Block.dropFunctions.2 (coords, blockID, blockData, level, enchant) 
+Block.dropFunctions.4 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.14 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.15 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.16 (coords, id, data, level, enchant) 
+Block.dropFunctions.21 (coords, id, data, level, enchant) 
+Block.dropFunctions.23 (coords, blockID, blockData, level) 
+Block.dropFunctions.30 (coords, id, data, level, enchant) 
+Block.dropFunctions.22 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.41 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.42 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.43 (coords, id, data, level, enchant) 
+Block.dropFunctions.44 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.45 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.48 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.49 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.52 (coords, id, data, level, enchant) 
+Block.dropFunctions.56 (coords, id, data, level, enchant) 
+Block.dropFunctions.57 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.61 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.62 (coords, id, data, level, enchant) 
+Block.dropFunctions.67 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.70 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.71 (coords, id, data, level, enchant) 
+Block.dropFunctions.73 (coords, id, data, level, enchant) 
+Block.dropFunctions.74 (coords, id, data, level, enchant) 
+Block.dropFunctions.77 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.87 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.98 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.101 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.108 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.109 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.112 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.113 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.114 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.116 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.117 (coords, blockID, blockData, level) 
+Block.dropFunctions.118 (coords, blockID, blockData, level) 
+Block.dropFunctions.121 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.125 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.128 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.129 (coords, id, data, level, enchant) 
+Block.dropFunctions.130 (coords, id, data, level, enchant) 
+Block.dropFunctions.133 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.139 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.135 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.147 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.148 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.152 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.153 (coords, id, data, level, enchant) 
+Block.dropFunctions.154 (coords, blockID, blockData, level) 
+Block.dropFunctions.155 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.156 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.159 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.167 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.168 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.172 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.173 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.179 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.180 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.181 (coords, id, data, level, enchant) 
+Block.dropFunctions.182 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.201 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.203 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.206 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.245 (blockCoords, blockID, blockData, diggingLevel) 
+Block.dropFunctions.251 (blockCoords, blockID, blockData, diggingLevel) 
+
+Block.getNumericId (id) 
+Block.createBlock (namedID, defineData, blockType) 
+Block.createBlockWithRotation (namedID, defineData, blockType) 
+Block.isNativeTile (id) 
+Block.registerDropFunctionForID (numericID, dropFunc, level) 
+Block.registerDropFunction (namedID, dropFunc, level) 
+Block.defaultDropFunction (blockCoords, blockID, blockData, diggingLevel) 
+Block.getDropFunction (id) 
+Block.setDestroyLevelForID (id, level) 
+Block.setDestroyLevel (namedID, level) 
+Block.setDestroyTime (namedID, time) 
+Block.getDestroyTime (numericID) 
+Block.setTempDestroyTime (numericID, time) 
+Block.setBlockMaterial (namedID, material, level) 
+Block.setRedstoneTile (namedID, data, isRedstone) 
+Block.onBlockDestroyed (coords, fullTile) 
+Block.getBlockDropViaItem (block, item, coords) 
+Block.registerPlaceFunctionForID (block, func) 
+Block.registerPlaceFunction (namedID, func) 
+Block.getPlaceFunc (block) 
+Block.setBlockShape (id, pos1, pos2, data) 
+Block.setShape (id, x1, y1, z1, x2, y2, z2, data) 
+Block.createSpecialType (description, nameKey) 
+Block.TYPE_BASE - string(createBlock)
+Block.TYPE_ROTATION - string(createBlockWithRotation)
+Block.setPrototype (namedID, Prototype) 
+
+Item.getNumericId (id) 
+Item.getItemById (id) 
+Item.createItem (namedID, name, texture, params) 
+Item.createFoodItem (namedID, name, texture, params) 
+Item.createFuelItem (namedID, name, texture, params) 
+Item.createArmorItem (namedID, name, texture, params) 
+Item.createThrowableItem (namedID, name, texture, params) 
+Item.isNativeItem (id) 
+Item.getMaxDamage (id) 
+Item.getMaxStack (id) 
+Item.getName (id, data, encode) 
+Item.isValid (id, data) 
+Item.addToCreative (id, count, data) 
+Item.describeItem (numericID, description) 
+Item.setCategory (id, category) 
+Item.setEnchantType (id, enchant, value) 
+Item.setToolRender (id, enabled) 
+Item.setMaxDamage (id, maxdamage) 
+Item.setGlint (id, enabled) 
+Item.setLiquidClip (id, enabled) 
+Item.setStackedByData (id, enabled) 
+Item.setProperties (id, props) 
+Item.setUseAnimation (id, animType) 
+Item.registerUseFunctionForID (numericID, useFunc) 
+Item.registerUseFunction (namedID, useFunc) 
+Item.onItemUsed (coords, item, block) 
+Item.registerThrowableFunctionForID (numericID, useFunc) 
+Item.registerThrowableFunction (namedID, useFunc) 
+Item.onProjectileHit (projectile, item, target) 
+Item.registerIconOverrideFunction (namedID, func) 
+Item.onIconOverride (item) 
+Item.registerNameOverrideFunction (namedID, func) 
+Item.onNameOverride (item, name) 
+Item.registerNoTargetUseFunction (namedID, func) 
+Item.onUseNoTarget (item) 
+Item.registerUsingReleasedFunction (namedID, func) 
+Item.onUsingReleased (item, ticks) 
+Item.registerUsingCompleteFunction (namedID, func) 
+Item.onUsingComplete (item) 
+Item.registerDispenseFunction (namedID, func) 
+Item.onDispense (coords, item) 
+Item.TYPE_BASE - string(createItem)
+Item.TYPE_FOOD - string(createFoodItem)
+Item.TYPE_ARMOR - string(createArmorItem)
+Item.TYPE_THROWABLE - string(createThrowableItem)
+Item.setPrototype (namedID, Prototype) 
+
+ToolAPI.blockMaterials.stone.multiplier - number(5)
+ToolAPI.blockMaterials.stone.name - string(stone)
+
+ToolAPI.blockMaterials.wood.multiplier - number(1.5)
+ToolAPI.blockMaterials.wood.name - string(wood)
+
+ToolAPI.blockMaterials.dirt.multiplier - number(1.5)
+ToolAPI.blockMaterials.dirt.name - string(dirt)
+
+ToolAPI.blockMaterials.plant.multiplier - number(1.5)
+ToolAPI.blockMaterials.plant.name - string(plant)
+
+ToolAPI.blockMaterials.fibre.multiplier - number(1.5)
+ToolAPI.blockMaterials.fibre.name - string(fibre)
+
+ToolAPI.blockMaterials.cobweb.multiplier - number(5)
+ToolAPI.blockMaterials.cobweb.name - string(cobweb)
+
+ToolAPI.blockMaterials.unbreaking.multiplier - number(999999999)
+ToolAPI.blockMaterials.unbreaking.name - string(unbreaking)
+
+
+ToolAPI.toolMaterials.wood.level - number(1)
+ToolAPI.toolMaterials.wood.durability - number(60)
+ToolAPI.toolMaterials.wood.damage - number(2)
+ToolAPI.toolMaterials.wood.efficiency - number(2)
+ToolAPI.toolMaterials.wood.name - string(wood)
+
+ToolAPI.toolMaterials.stone.level - number(2)
+ToolAPI.toolMaterials.stone.durability - number(132)
+ToolAPI.toolMaterials.stone.damage - number(3)
+ToolAPI.toolMaterials.stone.efficiency - number(4)
+ToolAPI.toolMaterials.stone.name - string(stone)
+
+ToolAPI.toolMaterials.iron.level - number(3)
+ToolAPI.toolMaterials.iron.durability - number(251)
+ToolAPI.toolMaterials.iron.damage - number(4)
+ToolAPI.toolMaterials.iron.efficiency - number(6)
+ToolAPI.toolMaterials.iron.name - string(iron)
+
+ToolAPI.toolMaterials.golden.level - number(1)
+ToolAPI.toolMaterials.golden.durability - number(33)
+ToolAPI.toolMaterials.golden.damage - number(2)
+ToolAPI.toolMaterials.golden.efficiency - number(12)
+ToolAPI.toolMaterials.golden.name - string(golden)
+
+ToolAPI.toolMaterials.diamond.level - number(4)
+ToolAPI.toolMaterials.diamond.durability - number(1562)
+ToolAPI.toolMaterials.diamond.damage - number(5)
+ToolAPI.toolMaterials.diamond.efficiency - number(8)
+ToolAPI.toolMaterials.diamond.name - string(diamond)
+
+
+ToolAPI.toolData.270.isNative - boolean(true)
+ToolAPI.toolData.270.damage - number(1)
+ToolAPI.toolData.270.brokenId - number(0)
+ToolAPI.toolData.270.toolMaterial.level - number(1)
+ToolAPI.toolData.270.toolMaterial.durability - number(60)
+ToolAPI.toolData.270.toolMaterial.damage - number(2)
+ToolAPI.toolData.270.toolMaterial.efficiency - number(2)
+ToolAPI.toolData.270.toolMaterial.name - string(wood)
+
+ToolAPI.toolData.270.blockMaterials.stone - boolean(true)
+
+ToolAPI.toolData.270.calcDestroyTime (tool, coords, block, timeData, defaultTime) 
+
+ToolAPI.toolData.274.isNative - boolean(true)
+ToolAPI.toolData.274.damage - number(1)
+ToolAPI.toolData.274.brokenId - number(0)
+ToolAPI.toolData.274.toolMaterial.level - number(2)
+ToolAPI.toolData.274.toolMaterial.durability - number(132)
+ToolAPI.toolData.274.toolMaterial.damage - number(3)
+ToolAPI.toolData.274.toolMaterial.efficiency - number(4)
+ToolAPI.toolData.274.toolMaterial.name - string(stone)
+
+ToolAPI.toolData.274.blockMaterials.stone - boolean(true)
+
+ToolAPI.toolData.274.calcDestroyTime (tool, coords, block, timeData, defaultTime) 
+
+ToolAPI.toolData.257.isNative - boolean(true)
+ToolAPI.toolData.257.damage - number(1)
+ToolAPI.toolData.257.brokenId - number(0)
+ToolAPI.toolData.257.toolMaterial.level - number(3)
+ToolAPI.toolData.257.toolMaterial.durability - number(251)
+ToolAPI.toolData.257.toolMaterial.damage - number(4)
+ToolAPI.toolData.257.toolMaterial.efficiency - number(6)
+ToolAPI.toolData.257.toolMaterial.name - string(iron)
+
+ToolAPI.toolData.257.blockMaterials.stone - boolean(true)
+
+ToolAPI.toolData.257.calcDestroyTime (tool, coords, block, timeData, defaultTime) 
+
+ToolAPI.toolData.285.isNative - boolean(true)
+ToolAPI.toolData.285.damage - number(1)
+ToolAPI.toolData.285.brokenId - number(0)
+ToolAPI.toolData.285.toolMaterial.level - number(1)
+ToolAPI.toolData.285.toolMaterial.durability - number(33)
+ToolAPI.toolData.285.toolMaterial.damage - number(2)
+ToolAPI.toolData.285.toolMaterial.efficiency - number(12)
+ToolAPI.toolData.285.toolMaterial.name - string(golden)
+
+ToolAPI.toolData.285.blockMaterials.stone - boolean(true)
+
+ToolAPI.toolData.285.calcDestroyTime (tool, coords, block, timeData, defaultTime) 
+
+ToolAPI.toolData.278.isNative - boolean(true)
+ToolAPI.toolData.278.damage - number(1)
+ToolAPI.toolData.278.brokenId - number(0)
+ToolAPI.toolData.278.toolMaterial.level - number(4)
+ToolAPI.toolData.278.toolMaterial.durability - number(1562)
+ToolAPI.toolData.278.toolMaterial.damage - number(5)
+ToolAPI.toolData.278.toolMaterial.efficiency - number(8)
+ToolAPI.toolData.278.toolMaterial.name - string(diamond)
+
+ToolAPI.toolData.278.blockMaterials.stone - boolean(true)
+
+ToolAPI.toolData.278.calcDestroyTime (tool, coords, block, timeData, defaultTime) 
+
+ToolAPI.toolData.271.isNative - boolean(true)
+ToolAPI.toolData.271.damage - number(2)
+ToolAPI.toolData.271.brokenId - number(0)
+ToolAPI.toolData.271.toolMaterial.level - number(1)
+ToolAPI.toolData.271.toolMaterial.durability - number(60)
+ToolAPI.toolData.271.toolMaterial.damage - number(2)
+ToolAPI.toolData.271.toolMaterial.efficiency - number(2)
+ToolAPI.toolData.271.toolMaterial.name - string(wood)
+
+ToolAPI.toolData.271.blockMaterials.wood - boolean(true)
+
+ToolAPI.toolData.271.calcDestroyTime (tool, coords, block, timeData, defaultTime) 
+
+ToolAPI.toolData.275.isNative - boolean(true)
+ToolAPI.toolData.275.damage - number(2)
+ToolAPI.toolData.275.brokenId - number(0)
+ToolAPI.toolData.275.toolMaterial.level - number(2)
+ToolAPI.toolData.275.toolMaterial.durability - number(132)
+ToolAPI.toolData.275.toolMaterial.damage - number(3)
+ToolAPI.toolData.275.toolMaterial.efficiency - number(4)
+ToolAPI.toolData.275.toolMaterial.name - string(stone)
+
+ToolAPI.toolData.275.blockMaterials.wood - boolean(true)
+
+ToolAPI.toolData.275.calcDestroyTime (tool, coords, block, timeData, defaultTime) 
+
+ToolAPI.toolData.258.isNative - boolean(true)
+ToolAPI.toolData.258.damage - number(2)
+ToolAPI.toolData.258.brokenId - number(0)
+ToolAPI.toolData.258.toolMaterial.level - number(3)
+ToolAPI.toolData.258.toolMaterial.durability - number(251)
+ToolAPI.toolData.258.toolMaterial.damage - number(4)
+ToolAPI.toolData.258.toolMaterial.efficiency - number(6)
+ToolAPI.toolData.258.toolMaterial.name - string(iron)
+
+ToolAPI.toolData.258.blockMaterials.wood - boolean(true)
+
+ToolAPI.toolData.258.calcDestroyTime (tool, coords, block, timeData, defaultTime) 
+
+ToolAPI.toolData.286.isNative - boolean(true)
+ToolAPI.toolData.286.damage - number(2)
+ToolAPI.toolData.286.brokenId - number(0)
+ToolAPI.toolData.286.toolMaterial.level - number(1)
+ToolAPI.toolData.286.toolMaterial.durability - number(33)
+ToolAPI.toolData.286.toolMaterial.damage - number(2)
+ToolAPI.toolData.286.toolMaterial.efficiency - number(12)
+ToolAPI.toolData.286.toolMaterial.name - string(golden)
+
+ToolAPI.toolData.286.blockMaterials.wood - boolean(true)
+
+ToolAPI.toolData.286.calcDestroyTime (tool, coords, block, timeData, defaultTime) 
+
+ToolAPI.toolData.279.isNative - boolean(true)
+ToolAPI.toolData.279.damage - number(2)
+ToolAPI.toolData.279.brokenId - number(0)
+ToolAPI.toolData.279.toolMaterial.level - number(4)
+ToolAPI.toolData.279.toolMaterial.durability - number(1562)
+ToolAPI.toolData.279.toolMaterial.damage - number(5)
+ToolAPI.toolData.279.toolMaterial.efficiency - number(8)
+ToolAPI.toolData.279.toolMaterial.name - string(diamond)
+
+ToolAPI.toolData.279.blockMaterials.wood - boolean(true)
+
+ToolAPI.toolData.279.calcDestroyTime (tool, coords, block, timeData, defaultTime) 
+
+ToolAPI.toolData.269.isNative - boolean(true)
+ToolAPI.toolData.269.damage - number(0)
+ToolAPI.toolData.269.brokenId - number(0)
+ToolAPI.toolData.269.toolMaterial.level - number(1)
+ToolAPI.toolData.269.toolMaterial.durability - number(60)
+ToolAPI.toolData.269.toolMaterial.damage - number(2)
+ToolAPI.toolData.269.toolMaterial.efficiency - number(2)
+ToolAPI.toolData.269.toolMaterial.name - string(wood)
+
+ToolAPI.toolData.269.blockMaterials.dirt - boolean(true)
+
+ToolAPI.toolData.269.calcDestroyTime (tool, coords, block, timeData, defaultTime) 
+
+ToolAPI.toolData.273.isNative - boolean(true)
+ToolAPI.toolData.273.damage - number(0)
+ToolAPI.toolData.273.brokenId - number(0)
+ToolAPI.toolData.273.toolMaterial.level - number(2)
+ToolAPI.toolData.273.toolMaterial.durability - number(132)
+ToolAPI.toolData.273.toolMaterial.damage - number(3)
+ToolAPI.toolData.273.toolMaterial.efficiency - number(4)
+ToolAPI.toolData.273.toolMaterial.name - string(stone)
+
+ToolAPI.toolData.273.blockMaterials.dirt - boolean(true)
+
+ToolAPI.toolData.273.calcDestroyTime (tool, coords, block, timeData, defaultTime) 
+
+ToolAPI.toolData.256.isNative - boolean(true)
+ToolAPI.toolData.256.damage - number(0)
+ToolAPI.toolData.256.brokenId - number(0)
+ToolAPI.toolData.256.toolMaterial.level - number(3)
+ToolAPI.toolData.256.toolMaterial.durability - number(251)
+ToolAPI.toolData.256.toolMaterial.damage - number(4)
+ToolAPI.toolData.256.toolMaterial.efficiency - number(6)
+ToolAPI.toolData.256.toolMaterial.name - string(iron)
+
+ToolAPI.toolData.256.blockMaterials.dirt - boolean(true)
+
+ToolAPI.toolData.256.calcDestroyTime (tool, coords, block, timeData, defaultTime) 
+
+ToolAPI.toolData.284.isNative - boolean(true)
+ToolAPI.toolData.284.damage - number(0)
+ToolAPI.toolData.284.brokenId - number(0)
+ToolAPI.toolData.284.toolMaterial.level - number(1)
+ToolAPI.toolData.284.toolMaterial.durability - number(33)
+ToolAPI.toolData.284.toolMaterial.damage - number(2)
+ToolAPI.toolData.284.toolMaterial.efficiency - number(12)
+ToolAPI.toolData.284.toolMaterial.name - string(golden)
+
+ToolAPI.toolData.284.blockMaterials.dirt - boolean(true)
+
+ToolAPI.toolData.284.calcDestroyTime (tool, coords, block, timeData, defaultTime) 
+
+ToolAPI.toolData.277.isNative - boolean(true)
+ToolAPI.toolData.277.damage - number(0)
+ToolAPI.toolData.277.brokenId - number(0)
+ToolAPI.toolData.277.toolMaterial.level - number(4)
+ToolAPI.toolData.277.toolMaterial.durability - number(1562)
+ToolAPI.toolData.277.toolMaterial.damage - number(5)
+ToolAPI.toolData.277.toolMaterial.efficiency - number(8)
+ToolAPI.toolData.277.toolMaterial.name - string(diamond)
+
+ToolAPI.toolData.277.blockMaterials.dirt - boolean(true)
+
+ToolAPI.toolData.277.calcDestroyTime (tool, coords, block, timeData, defaultTime) 
+
+
+ToolAPI.blockData.1.material.multiplier - number(5)
+ToolAPI.blockData.1.material.name - string(stone)
+
+ToolAPI.blockData.1.level - number(1)
+ToolAPI.blockData.1.isNative - boolean(true)
+
+ToolAPI.blockData.4.material.multiplier - number(5)
+ToolAPI.blockData.4.material.name - string(stone)
+
+ToolAPI.blockData.4.level - number(1)
+ToolAPI.blockData.4.isNative - boolean(true)
+
+ToolAPI.blockData.14.material.multiplier - number(5)
+ToolAPI.blockData.14.material.name - string(stone)
+
+ToolAPI.blockData.14.level - number(3)
+ToolAPI.blockData.14.isNative - boolean(true)
+
+ToolAPI.blockData.15.material.multiplier - number(5)
+ToolAPI.blockData.15.material.name - string(stone)
+
+ToolAPI.blockData.15.level - number(2)
+ToolAPI.blockData.15.isNative - boolean(true)
+
+ToolAPI.blockData.16.material.multiplier - number(5)
+ToolAPI.blockData.16.material.name - string(stone)
+
+ToolAPI.blockData.16.level - number(1)
+ToolAPI.blockData.16.isNative - boolean(true)
+
+ToolAPI.blockData.21.material.multiplier - number(5)
+ToolAPI.blockData.21.material.name - string(stone)
+
+ToolAPI.blockData.21.level - number(2)
+ToolAPI.blockData.21.isNative - boolean(true)
+
+ToolAPI.blockData.22.material.multiplier - number(5)
+ToolAPI.blockData.22.material.name - string(stone)
+
+ToolAPI.blockData.22.level - number(2)
+ToolAPI.blockData.22.isNative - boolean(true)
+
+ToolAPI.blockData.23.material.multiplier - number(5)
+ToolAPI.blockData.23.material.name - string(stone)
+
+ToolAPI.blockData.23.level - number(1)
+ToolAPI.blockData.23.isNative - boolean(true)
+
+ToolAPI.blockData.24.material.multiplier - number(5)
+ToolAPI.blockData.24.material.name - string(stone)
+
+ToolAPI.blockData.24.level - number(0)
+ToolAPI.blockData.24.isNative - boolean(true)
+
+ToolAPI.blockData.27.material.multiplier - number(5)
+ToolAPI.blockData.27.material.name - string(stone)
+
+ToolAPI.blockData.27.level - number(0)
+ToolAPI.blockData.27.isNative - boolean(true)
+
+ToolAPI.blockData.28.material.multiplier - number(5)
+ToolAPI.blockData.28.material.name - string(stone)
+
+ToolAPI.blockData.28.level - number(0)
+ToolAPI.blockData.28.isNative - boolean(true)
+
+ToolAPI.blockData.29.material.multiplier - number(5)
+ToolAPI.blockData.29.material.name - string(stone)
+
+ToolAPI.blockData.29.level - number(0)
+ToolAPI.blockData.29.isNative - boolean(true)
+
+ToolAPI.blockData.33.material.multiplier - number(5)
+ToolAPI.blockData.33.material.name - string(stone)
+
+ToolAPI.blockData.33.level - number(0)
+ToolAPI.blockData.33.isNative - boolean(true)
+
+ToolAPI.blockData.41.material.multiplier - number(5)
+ToolAPI.blockData.41.material.name - string(stone)
+
+ToolAPI.blockData.41.level - number(3)
+ToolAPI.blockData.41.isNative - boolean(true)
+
+ToolAPI.blockData.42.material.multiplier - number(5)
+ToolAPI.blockData.42.material.name - string(stone)
+
+ToolAPI.blockData.42.level - number(3)
+ToolAPI.blockData.42.isNative - boolean(true)
+
+ToolAPI.blockData.43.material.multiplier - number(5)
+ToolAPI.blockData.43.material.name - string(stone)
+
+ToolAPI.blockData.43.level - number(1)
+ToolAPI.blockData.43.isNative - boolean(true)
+
+ToolAPI.blockData.44.material.multiplier - number(5)
+ToolAPI.blockData.44.material.name - string(stone)
+
+ToolAPI.blockData.44.level - number(1)
+ToolAPI.blockData.44.isNative - boolean(true)
+
+ToolAPI.blockData.45.material.multiplier - number(5)
+ToolAPI.blockData.45.material.name - string(stone)
+
+ToolAPI.blockData.45.level - number(1)
+ToolAPI.blockData.45.isNative - boolean(true)
+
+ToolAPI.blockData.48.material.multiplier - number(5)
+ToolAPI.blockData.48.material.name - string(stone)
+
+ToolAPI.blockData.48.level - number(1)
+ToolAPI.blockData.48.isNative - boolean(true)
+
+ToolAPI.blockData.49.material.multiplier - number(5)
+ToolAPI.blockData.49.material.name - string(stone)
+
+ToolAPI.blockData.49.level - number(4)
+ToolAPI.blockData.49.isNative - boolean(true)
+
+ToolAPI.blockData.52.material.multiplier - number(5)
+ToolAPI.blockData.52.material.name - string(stone)
+
+ToolAPI.blockData.52.level - number(1)
+ToolAPI.blockData.52.isNative - boolean(true)
+
+ToolAPI.blockData.56.material.multiplier - number(5)
+ToolAPI.blockData.56.material.name - string(stone)
+
+ToolAPI.blockData.56.level - number(3)
+ToolAPI.blockData.56.isNative - boolean(true)
+
+ToolAPI.blockData.57.material.multiplier - number(5)
+ToolAPI.blockData.57.material.name - string(stone)
+
+ToolAPI.blockData.57.level - number(3)
+ToolAPI.blockData.57.isNative - boolean(true)
+
+ToolAPI.blockData.61.material.multiplier - number(5)
+ToolAPI.blockData.61.material.name - string(stone)
+
+ToolAPI.blockData.61.level - number(1)
+ToolAPI.blockData.61.isNative - boolean(true)
+
+ToolAPI.blockData.62.material.multiplier - number(5)
+ToolAPI.blockData.62.material.name - string(stone)
+
+ToolAPI.blockData.62.level - number(1)
+ToolAPI.blockData.62.isNative - boolean(true)
+
+ToolAPI.blockData.66.material.multiplier - number(5)
+ToolAPI.blockData.66.material.name - string(stone)
+
+ToolAPI.blockData.66.level - number(0)
+ToolAPI.blockData.66.isNative - boolean(true)
+
+ToolAPI.blockData.67.material.multiplier - number(5)
+ToolAPI.blockData.67.material.name - string(stone)
+
+ToolAPI.blockData.67.level - number(1)
+ToolAPI.blockData.67.isNative - boolean(true)
+
+ToolAPI.blockData.70.material.multiplier - number(5)
+ToolAPI.blockData.70.material.name - string(stone)
+
+ToolAPI.blockData.70.level - number(1)
+ToolAPI.blockData.70.isNative - boolean(true)
+
+ToolAPI.blockData.71.material.multiplier - number(5)
+ToolAPI.blockData.71.material.name - string(stone)
+
+ToolAPI.blockData.71.level - number(2)
+ToolAPI.blockData.71.isNative - boolean(true)
+
+ToolAPI.blockData.73.material.multiplier - number(5)
+ToolAPI.blockData.73.material.name - string(stone)
+
+ToolAPI.blockData.73.level - number(3)
+ToolAPI.blockData.73.isNative - boolean(true)
+
+ToolAPI.blockData.74.material.multiplier - number(5)
+ToolAPI.blockData.74.material.name - string(stone)
+
+ToolAPI.blockData.74.level - number(3)
+ToolAPI.blockData.74.isNative - boolean(true)
+
+ToolAPI.blockData.77.material.multiplier - number(5)
+ToolAPI.blockData.77.material.name - string(stone)
+
+ToolAPI.blockData.77.level - number(1)
+ToolAPI.blockData.77.isNative - boolean(true)
+
+ToolAPI.blockData.87.material.multiplier - number(5)
+ToolAPI.blockData.87.material.name - string(stone)
+
+ToolAPI.blockData.87.level - number(1)
+ToolAPI.blockData.87.isNative - boolean(true)
+
+ToolAPI.blockData.89.material.multiplier - number(5)
+ToolAPI.blockData.89.material.name - string(stone)
+
+ToolAPI.blockData.89.level - number(0)
+ToolAPI.blockData.89.isNative - boolean(true)
+
+ToolAPI.blockData.97.material.multiplier - number(5)
+ToolAPI.blockData.97.material.name - string(stone)
+
+ToolAPI.blockData.97.level - number(0)
+ToolAPI.blockData.97.isNative - boolean(true)
+
+ToolAPI.blockData.98.material.multiplier - number(5)
+ToolAPI.blockData.98.material.name - string(stone)
+
+ToolAPI.blockData.98.level - number(1)
+ToolAPI.blockData.98.isNative - boolean(true)
+
+ToolAPI.blockData.101.material.multiplier - number(5)
+ToolAPI.blockData.101.material.name - string(stone)
+
+ToolAPI.blockData.101.level - number(2)
+ToolAPI.blockData.101.isNative - boolean(true)
+
+ToolAPI.blockData.108.material.multiplier - number(5)
+ToolAPI.blockData.108.material.name - string(stone)
+
+ToolAPI.blockData.108.level - number(1)
+ToolAPI.blockData.108.isNative - boolean(true)
+
+ToolAPI.blockData.109.material.multiplier - number(5)
+ToolAPI.blockData.109.material.name - string(stone)
+
+ToolAPI.blockData.109.level - number(1)
+ToolAPI.blockData.109.isNative - boolean(true)
+
+ToolAPI.blockData.112.material.multiplier - number(5)
+ToolAPI.blockData.112.material.name - string(stone)
+
+ToolAPI.blockData.112.level - number(2)
+ToolAPI.blockData.112.isNative - boolean(true)
+
+ToolAPI.blockData.113.material.multiplier - number(5)
+ToolAPI.blockData.113.material.name - string(stone)
+
+ToolAPI.blockData.113.level - number(2)
+ToolAPI.blockData.113.isNative - boolean(true)
+
+ToolAPI.blockData.114.material.multiplier - number(5)
+ToolAPI.blockData.114.material.name - string(stone)
+
+ToolAPI.blockData.114.level - number(2)
+ToolAPI.blockData.114.isNative - boolean(true)
+
+ToolAPI.blockData.116.material.multiplier - number(5)
+ToolAPI.blockData.116.material.name - string(stone)
+
+ToolAPI.blockData.116.level - number(2)
+ToolAPI.blockData.116.isNative - boolean(true)
+
+ToolAPI.blockData.117.material.multiplier - number(5)
+ToolAPI.blockData.117.material.name - string(stone)
+
+ToolAPI.blockData.117.level - number(1)
+ToolAPI.blockData.117.isNative - boolean(true)
+
+ToolAPI.blockData.118.material.multiplier - number(5)
+ToolAPI.blockData.118.material.name - string(stone)
+
+ToolAPI.blockData.118.level - number(1)
+ToolAPI.blockData.118.isNative - boolean(true)
+
+ToolAPI.blockData.120.material.multiplier - number(5)
+ToolAPI.blockData.120.material.name - string(stone)
+
+ToolAPI.blockData.120.level - number(0)
+ToolAPI.blockData.120.isNative - boolean(true)
+
+ToolAPI.blockData.121.material.multiplier - number(5)
+ToolAPI.blockData.121.material.name - string(stone)
+
+ToolAPI.blockData.121.level - number(2)
+ToolAPI.blockData.121.isNative - boolean(true)
+
+ToolAPI.blockData.123.material.multiplier - number(5)
+ToolAPI.blockData.123.material.name - string(stone)
+
+ToolAPI.blockData.123.level - number(0)
+ToolAPI.blockData.123.isNative - boolean(true)
+
+ToolAPI.blockData.124.material.multiplier - number(5)
+ToolAPI.blockData.124.material.name - string(stone)
+
+ToolAPI.blockData.124.level - number(0)
+ToolAPI.blockData.124.isNative - boolean(true)
+
+ToolAPI.blockData.125.material.multiplier - number(5)
+ToolAPI.blockData.125.material.name - string(stone)
+
+ToolAPI.blockData.125.level - number(1)
+ToolAPI.blockData.125.isNative - boolean(true)
+
+ToolAPI.blockData.126.material.multiplier - number(5)
+ToolAPI.blockData.126.material.name - string(stone)
+
+ToolAPI.blockData.126.level - number(0)
+ToolAPI.blockData.126.isNative - boolean(true)
+
+ToolAPI.blockData.128.material.multiplier - number(5)
+ToolAPI.blockData.128.material.name - string(stone)
+
+ToolAPI.blockData.128.level - number(1)
+ToolAPI.blockData.128.isNative - boolean(true)
+
+ToolAPI.blockData.129.material.multiplier - number(5)
+ToolAPI.blockData.129.material.name - string(stone)
+
+ToolAPI.blockData.129.level - number(3)
+ToolAPI.blockData.129.isNative - boolean(true)
+
+ToolAPI.blockData.130.material.multiplier - number(5)
+ToolAPI.blockData.130.material.name - string(stone)
+
+ToolAPI.blockData.130.level - number(1)
+ToolAPI.blockData.130.isNative - boolean(true)
+
+ToolAPI.blockData.133.material.multiplier - number(5)
+ToolAPI.blockData.133.material.name - string(stone)
+
+ToolAPI.blockData.133.level - number(3)
+ToolAPI.blockData.133.isNative - boolean(true)
+
+ToolAPI.blockData.139.material.multiplier - number(5)
+ToolAPI.blockData.139.material.name - string(stone)
+
+ToolAPI.blockData.139.level - number(1)
+ToolAPI.blockData.139.isNative - boolean(true)
+
+ToolAPI.blockData.145.material.multiplier - number(5)
+ToolAPI.blockData.145.material.name - string(stone)
+
+ToolAPI.blockData.145.level - number(0)
+ToolAPI.blockData.145.isNative - boolean(true)
+
+ToolAPI.blockData.147.material.multiplier - number(5)
+ToolAPI.blockData.147.material.name - string(stone)
+
+ToolAPI.blockData.147.level - number(2)
+ToolAPI.blockData.147.isNative - boolean(true)
+
+ToolAPI.blockData.148.material.multiplier - number(5)
+ToolAPI.blockData.148.material.name - string(stone)
+
+ToolAPI.blockData.148.level - number(2)
+ToolAPI.blockData.148.isNative - boolean(true)
+
+ToolAPI.blockData.152.material.multiplier - number(5)
+ToolAPI.blockData.152.material.name - string(stone)
+
+ToolAPI.blockData.152.level - number(3)
+ToolAPI.blockData.152.isNative - boolean(true)
+
+ToolAPI.blockData.153.material.multiplier - number(5)
+ToolAPI.blockData.153.material.name - string(stone)
+
+ToolAPI.blockData.153.level - number(2)
+ToolAPI.blockData.153.isNative - boolean(true)
+
+ToolAPI.blockData.154.material.multiplier - number(5)
+ToolAPI.blockData.154.material.name - string(stone)
+
+ToolAPI.blockData.154.level - number(1)
+ToolAPI.blockData.154.isNative - boolean(true)
+
+ToolAPI.blockData.155.material.multiplier - number(5)
+ToolAPI.blockData.155.material.name - string(stone)
+
+ToolAPI.blockData.155.level - number(2)
+ToolAPI.blockData.155.isNative - boolean(true)
+
+ToolAPI.blockData.156.material.multiplier - number(5)
+ToolAPI.blockData.156.material.name - string(stone)
+
+ToolAPI.blockData.156.level - number(2)
+ToolAPI.blockData.156.isNative - boolean(true)
+
+ToolAPI.blockData.159.material.multiplier - number(1.5)
+ToolAPI.blockData.159.material.name - string(dirt)
+
+ToolAPI.blockData.159.level - number(1)
+ToolAPI.blockData.159.isNative - boolean(true)
+
+ToolAPI.blockData.167.material.multiplier - number(5)
+ToolAPI.blockData.167.material.name - string(stone)
+
+ToolAPI.blockData.167.level - number(2)
+ToolAPI.blockData.167.isNative - boolean(true)
+
+ToolAPI.blockData.168.material.multiplier - number(5)
+ToolAPI.blockData.168.material.name - string(stone)
+
+ToolAPI.blockData.168.level - number(1)
+ToolAPI.blockData.168.isNative - boolean(true)
+
+ToolAPI.blockData.172.material.multiplier - number(5)
+ToolAPI.blockData.172.material.name - string(stone)
+
+ToolAPI.blockData.172.level - number(1)
+ToolAPI.blockData.172.isNative - boolean(true)
+
+ToolAPI.blockData.173.material.multiplier - number(5)
+ToolAPI.blockData.173.material.name - string(stone)
+
+ToolAPI.blockData.173.level - number(1)
+ToolAPI.blockData.173.isNative - boolean(true)
+
+ToolAPI.blockData.179.material.multiplier - number(5)
+ToolAPI.blockData.179.material.name - string(stone)
+
+ToolAPI.blockData.179.level - number(1)
+ToolAPI.blockData.179.isNative - boolean(true)
+
+ToolAPI.blockData.180.material.multiplier - number(5)
+ToolAPI.blockData.180.material.name - string(stone)
+
+ToolAPI.blockData.180.level - number(1)
+ToolAPI.blockData.180.isNative - boolean(true)
+
+ToolAPI.blockData.181.material.multiplier - number(5)
+ToolAPI.blockData.181.material.name - string(stone)
+
+ToolAPI.blockData.181.level - number(1)
+ToolAPI.blockData.181.isNative - boolean(true)
+
+ToolAPI.blockData.182.material.multiplier - number(5)
+ToolAPI.blockData.182.material.name - string(stone)
+
+ToolAPI.blockData.182.level - number(1)
+ToolAPI.blockData.182.isNative - boolean(true)
+
+ToolAPI.blockData.201.material.multiplier - number(5)
+ToolAPI.blockData.201.material.name - string(stone)
+
+ToolAPI.blockData.201.level - number(1)
+ToolAPI.blockData.201.isNative - boolean(true)
+
+ToolAPI.blockData.203.material.multiplier - number(5)
+ToolAPI.blockData.203.material.name - string(stone)
+
+ToolAPI.blockData.203.level - number(1)
+ToolAPI.blockData.203.isNative - boolean(true)
+
+ToolAPI.blockData.206.material.multiplier - number(5)
+ToolAPI.blockData.206.material.name - string(stone)
+
+ToolAPI.blockData.206.level - number(1)
+ToolAPI.blockData.206.isNative - boolean(true)
+
+ToolAPI.blockData.245.material.multiplier - number(5)
+ToolAPI.blockData.245.material.name - string(stone)
+
+ToolAPI.blockData.245.level - number(1)
+ToolAPI.blockData.245.isNative - boolean(true)
+
+ToolAPI.blockData.251.material.multiplier - number(5)
+ToolAPI.blockData.251.material.name - string(stone)
+
+ToolAPI.blockData.251.level - number(1)
+ToolAPI.blockData.251.isNative - boolean(true)
+
+ToolAPI.blockData.79.material.multiplier - number(5)
+ToolAPI.blockData.79.material.name - string(stone)
+
+ToolAPI.blockData.79.level - number(0)
+ToolAPI.blockData.79.isNative - boolean(true)
+
+ToolAPI.blockData.174.material.multiplier - number(5)
+ToolAPI.blockData.174.material.name - string(stone)
+
+ToolAPI.blockData.174.level - number(0)
+ToolAPI.blockData.174.isNative - boolean(true)
+
+ToolAPI.blockData.5.material.multiplier - number(1.5)
+ToolAPI.blockData.5.material.name - string(wood)
+
+ToolAPI.blockData.5.level - number(0)
+ToolAPI.blockData.5.isNative - boolean(true)
+
+ToolAPI.blockData.17.material.multiplier - number(1.5)
+ToolAPI.blockData.17.material.name - string(wood)
+
+ToolAPI.blockData.17.level - number(0)
+ToolAPI.blockData.17.isNative - boolean(true)
+
+ToolAPI.blockData.25.material.multiplier - number(1.5)
+ToolAPI.blockData.25.material.name - string(wood)
+
+ToolAPI.blockData.25.level - number(0)
+ToolAPI.blockData.25.isNative - boolean(true)
+
+ToolAPI.blockData.47.material.multiplier - number(1.5)
+ToolAPI.blockData.47.material.name - string(wood)
+
+ToolAPI.blockData.47.level - number(0)
+ToolAPI.blockData.47.isNative - boolean(true)
+
+ToolAPI.blockData.53.material.multiplier - number(1.5)
+ToolAPI.blockData.53.material.name - string(wood)
+
+ToolAPI.blockData.53.level - number(0)
+ToolAPI.blockData.53.isNative - boolean(true)
+
+ToolAPI.blockData.54.material.multiplier - number(1.5)
+ToolAPI.blockData.54.material.name - string(wood)
+
+ToolAPI.blockData.54.level - number(0)
+ToolAPI.blockData.54.isNative - boolean(true)
+
+ToolAPI.blockData.58.material.multiplier - number(1.5)
+ToolAPI.blockData.58.material.name - string(wood)
+
+ToolAPI.blockData.58.level - number(0)
+ToolAPI.blockData.58.isNative - boolean(true)
+
+ToolAPI.blockData.63.material.multiplier - number(1.5)
+ToolAPI.blockData.63.material.name - string(wood)
+
+ToolAPI.blockData.63.level - number(0)
+ToolAPI.blockData.63.isNative - boolean(true)
+
+ToolAPI.blockData.68.material.multiplier - number(1.5)
+ToolAPI.blockData.68.material.name - string(wood)
+
+ToolAPI.blockData.68.level - number(0)
+ToolAPI.blockData.68.isNative - boolean(true)
+
+ToolAPI.blockData.64.material.multiplier - number(1.5)
+ToolAPI.blockData.64.material.name - string(wood)
+
+ToolAPI.blockData.64.level - number(0)
+ToolAPI.blockData.64.isNative - boolean(true)
+
+ToolAPI.blockData.65.material.multiplier - number(1.5)
+ToolAPI.blockData.65.material.name - string(wood)
+
+ToolAPI.blockData.65.level - number(0)
+ToolAPI.blockData.65.isNative - boolean(true)
+
+ToolAPI.blockData.72.material.multiplier - number(1.5)
+ToolAPI.blockData.72.material.name - string(wood)
+
+ToolAPI.blockData.72.level - number(0)
+ToolAPI.blockData.72.isNative - boolean(true)
+
+ToolAPI.blockData.85.material.multiplier - number(1.5)
+ToolAPI.blockData.85.material.name - string(wood)
+
+ToolAPI.blockData.85.level - number(0)
+ToolAPI.blockData.85.isNative - boolean(true)
+
+ToolAPI.blockData.96.material.multiplier - number(1.5)
+ToolAPI.blockData.96.material.name - string(wood)
+
+ToolAPI.blockData.96.level - number(0)
+ToolAPI.blockData.96.isNative - boolean(true)
+
+ToolAPI.blockData.107.material.multiplier - number(1.5)
+ToolAPI.blockData.107.material.name - string(wood)
+
+ToolAPI.blockData.107.level - number(0)
+ToolAPI.blockData.107.isNative - boolean(true)
+
+ToolAPI.blockData.131.material.multiplier - number(1.5)
+ToolAPI.blockData.131.material.name - string(wood)
+
+ToolAPI.blockData.131.level - number(0)
+ToolAPI.blockData.131.isNative - boolean(true)
+
+ToolAPI.blockData.134.material.multiplier - number(1.5)
+ToolAPI.blockData.134.material.name - string(wood)
+
+ToolAPI.blockData.134.level - number(0)
+ToolAPI.blockData.134.isNative - boolean(true)
+
+ToolAPI.blockData.135.material.multiplier - number(1.5)
+ToolAPI.blockData.135.material.name - string(wood)
+
+ToolAPI.blockData.135.level - number(2)
+ToolAPI.blockData.135.isNative - boolean(true)
+
+ToolAPI.blockData.136.material.multiplier - number(1.5)
+ToolAPI.blockData.136.material.name - string(wood)
+
+ToolAPI.blockData.136.level - number(0)
+ToolAPI.blockData.136.isNative - boolean(true)
+
+ToolAPI.blockData.163.material.multiplier - number(1.5)
+ToolAPI.blockData.163.material.name - string(wood)
+
+ToolAPI.blockData.163.level - number(0)
+ToolAPI.blockData.163.isNative - boolean(true)
+
+ToolAPI.blockData.164.material.multiplier - number(1.5)
+ToolAPI.blockData.164.material.name - string(wood)
+
+ToolAPI.blockData.164.level - number(0)
+ToolAPI.blockData.164.isNative - boolean(true)
+
+ToolAPI.blockData.143.material.multiplier - number(1.5)
+ToolAPI.blockData.143.material.name - string(wood)
+
+ToolAPI.blockData.143.level - number(0)
+ToolAPI.blockData.143.isNative - boolean(true)
+
+ToolAPI.blockData.146.material.multiplier - number(1.5)
+ToolAPI.blockData.146.material.name - string(wood)
+
+ToolAPI.blockData.146.level - number(0)
+ToolAPI.blockData.146.isNative - boolean(true)
+
+ToolAPI.blockData.151.material.multiplier - number(1.5)
+ToolAPI.blockData.151.material.name - string(wood)
+
+ToolAPI.blockData.151.level - number(0)
+ToolAPI.blockData.151.isNative - boolean(true)
+
+ToolAPI.blockData.178.material.multiplier - number(1.5)
+ToolAPI.blockData.178.material.name - string(wood)
+
+ToolAPI.blockData.178.level - number(0)
+ToolAPI.blockData.178.isNative - boolean(true)
+
+ToolAPI.blockData.157.material.multiplier - number(1.5)
+ToolAPI.blockData.157.material.name - string(wood)
+
+ToolAPI.blockData.157.level - number(0)
+ToolAPI.blockData.157.isNative - boolean(true)
+
+ToolAPI.blockData.158.material.multiplier - number(1.5)
+ToolAPI.blockData.158.material.name - string(wood)
+
+ToolAPI.blockData.158.level - number(0)
+ToolAPI.blockData.158.isNative - boolean(true)
+
+ToolAPI.blockData.162.material.multiplier - number(1.5)
+ToolAPI.blockData.162.material.name - string(wood)
+
+ToolAPI.blockData.162.level - number(0)
+ToolAPI.blockData.162.isNative - boolean(true)
+
+ToolAPI.blockData.183.material.multiplier - number(1.5)
+ToolAPI.blockData.183.material.name - string(wood)
+
+ToolAPI.blockData.183.level - number(0)
+ToolAPI.blockData.183.isNative - boolean(true)
+
+ToolAPI.blockData.184.material.multiplier - number(1.5)
+ToolAPI.blockData.184.material.name - string(wood)
+
+ToolAPI.blockData.184.level - number(0)
+ToolAPI.blockData.184.isNative - boolean(true)
+
+ToolAPI.blockData.185.material.multiplier - number(1.5)
+ToolAPI.blockData.185.material.name - string(wood)
+
+ToolAPI.blockData.185.level - number(0)
+ToolAPI.blockData.185.isNative - boolean(true)
+
+ToolAPI.blockData.186.material.multiplier - number(1.5)
+ToolAPI.blockData.186.material.name - string(wood)
+
+ToolAPI.blockData.186.level - number(0)
+ToolAPI.blockData.186.isNative - boolean(true)
+
+ToolAPI.blockData.187.material.multiplier - number(1.5)
+ToolAPI.blockData.187.material.name - string(wood)
+
+ToolAPI.blockData.187.level - number(0)
+ToolAPI.blockData.187.isNative - boolean(true)
+
+ToolAPI.blockData.193.material.multiplier - number(1.5)
+ToolAPI.blockData.193.material.name - string(wood)
+
+ToolAPI.blockData.193.level - number(0)
+ToolAPI.blockData.193.isNative - boolean(true)
+
+ToolAPI.blockData.194.material.multiplier - number(1.5)
+ToolAPI.blockData.194.material.name - string(wood)
+
+ToolAPI.blockData.194.level - number(0)
+ToolAPI.blockData.194.isNative - boolean(true)
+
+ToolAPI.blockData.195.material.multiplier - number(1.5)
+ToolAPI.blockData.195.material.name - string(wood)
+
+ToolAPI.blockData.195.level - number(0)
+ToolAPI.blockData.195.isNative - boolean(true)
+
+ToolAPI.blockData.196.material.multiplier - number(1.5)
+ToolAPI.blockData.196.material.name - string(wood)
+
+ToolAPI.blockData.196.level - number(0)
+ToolAPI.blockData.196.isNative - boolean(true)
+
+ToolAPI.blockData.197.material.multiplier - number(1.5)
+ToolAPI.blockData.197.material.name - string(wood)
+
+ToolAPI.blockData.197.level - number(0)
+ToolAPI.blockData.197.isNative - boolean(true)
+
+ToolAPI.blockData.2.material.multiplier - number(1.5)
+ToolAPI.blockData.2.material.name - string(dirt)
+
+ToolAPI.blockData.2.level - number(0)
+ToolAPI.blockData.2.isNative - boolean(true)
+
+ToolAPI.blockData.3.material.multiplier - number(1.5)
+ToolAPI.blockData.3.material.name - string(dirt)
+
+ToolAPI.blockData.3.level - number(0)
+ToolAPI.blockData.3.isNative - boolean(true)
+
+ToolAPI.blockData.12.material.multiplier - number(1.5)
+ToolAPI.blockData.12.material.name - string(dirt)
+
+ToolAPI.blockData.12.level - number(0)
+ToolAPI.blockData.12.isNative - boolean(true)
+
+ToolAPI.blockData.13.material.multiplier - number(1.5)
+ToolAPI.blockData.13.material.name - string(dirt)
+
+ToolAPI.blockData.13.level - number(0)
+ToolAPI.blockData.13.isNative - boolean(true)
+
+ToolAPI.blockData.60.material.multiplier - number(1.5)
+ToolAPI.blockData.60.material.name - string(dirt)
+
+ToolAPI.blockData.60.level - number(0)
+ToolAPI.blockData.60.isNative - boolean(true)
+
+ToolAPI.blockData.78.material.multiplier - number(1.5)
+ToolAPI.blockData.78.material.name - string(dirt)
+
+ToolAPI.blockData.78.level - number(0)
+ToolAPI.blockData.78.isNative - boolean(true)
+
+ToolAPI.blockData.80.material.multiplier - number(1.5)
+ToolAPI.blockData.80.material.name - string(dirt)
+
+ToolAPI.blockData.80.level - number(0)
+ToolAPI.blockData.80.isNative - boolean(true)
+
+ToolAPI.blockData.88.material.multiplier - number(1.5)
+ToolAPI.blockData.88.material.name - string(dirt)
+
+ToolAPI.blockData.88.level - number(0)
+ToolAPI.blockData.88.isNative - boolean(true)
+
+ToolAPI.blockData.110.material.multiplier - number(1.5)
+ToolAPI.blockData.110.material.name - string(dirt)
+
+ToolAPI.blockData.110.level - number(0)
+ToolAPI.blockData.110.isNative - boolean(true)
+
+ToolAPI.blockData.198.material.multiplier - number(1.5)
+ToolAPI.blockData.198.material.name - string(dirt)
+
+ToolAPI.blockData.198.level - number(0)
+ToolAPI.blockData.198.isNative - boolean(true)
+
+ToolAPI.blockData.243.material.multiplier - number(1.5)
+ToolAPI.blockData.243.material.name - string(dirt)
+
+ToolAPI.blockData.243.level - number(0)
+ToolAPI.blockData.243.isNative - boolean(true)
+
+ToolAPI.blockData.19.material.multiplier - number(1.5)
+ToolAPI.blockData.19.material.name - string(fibre)
+
+ToolAPI.blockData.19.level - number(0)
+ToolAPI.blockData.19.isNative - boolean(true)
+
+ToolAPI.blockData.30.material.multiplier - number(1.5)
+ToolAPI.blockData.30.material.name - string(fibre)
+
+ToolAPI.blockData.30.level - number(1)
+ToolAPI.blockData.30.isNative - boolean(true)
+
+ToolAPI.blockData.86.material.multiplier - number(1.5)
+ToolAPI.blockData.86.material.name - string(fibre)
+
+ToolAPI.blockData.86.level - number(0)
+ToolAPI.blockData.86.isNative - boolean(true)
+
+ToolAPI.blockData.91.material.multiplier - number(1.5)
+ToolAPI.blockData.91.material.name - string(fibre)
+
+ToolAPI.blockData.91.level - number(0)
+ToolAPI.blockData.91.isNative - boolean(true)
+
+ToolAPI.blockData.99.material.multiplier - number(1.5)
+ToolAPI.blockData.99.material.name - string(fibre)
+
+ToolAPI.blockData.99.level - number(0)
+ToolAPI.blockData.99.isNative - boolean(true)
+
+ToolAPI.blockData.100.material.multiplier - number(1.5)
+ToolAPI.blockData.100.material.name - string(fibre)
+
+ToolAPI.blockData.100.level - number(0)
+ToolAPI.blockData.100.isNative - boolean(true)
+
+ToolAPI.blockData.103.material.multiplier - number(1.5)
+ToolAPI.blockData.103.material.name - string(fibre)
+
+ToolAPI.blockData.103.level - number(0)
+ToolAPI.blockData.103.isNative - boolean(true)
+
+ToolAPI.blockData.170.material.multiplier - number(1.5)
+ToolAPI.blockData.170.material.name - string(fibre)
+
+ToolAPI.blockData.170.level - number(0)
+ToolAPI.blockData.170.isNative - boolean(true)
+
+ToolAPI.blockData.6.material.multiplier - number(1.5)
+ToolAPI.blockData.6.material.name - string(plant)
+
+ToolAPI.blockData.6.level - number(0)
+ToolAPI.blockData.6.isNative - boolean(true)
+
+ToolAPI.blockData.18.material.multiplier - number(1.5)
+ToolAPI.blockData.18.material.name - string(plant)
+
+ToolAPI.blockData.18.level - number(0)
+ToolAPI.blockData.18.isNative - boolean(true)
+
+ToolAPI.blockData.161.material.multiplier - number(1.5)
+ToolAPI.blockData.161.material.name - string(plant)
+
+ToolAPI.blockData.161.level - number(0)
+ToolAPI.blockData.161.isNative - boolean(true)
+
+ToolAPI.blockData.31.material.multiplier - number(1.5)
+ToolAPI.blockData.31.material.name - string(plant)
+
+ToolAPI.blockData.31.level - number(0)
+ToolAPI.blockData.31.isNative - boolean(true)
+
+ToolAPI.blockData.32.material.multiplier - number(1.5)
+ToolAPI.blockData.32.material.name - string(plant)
+
+ToolAPI.blockData.32.level - number(0)
+ToolAPI.blockData.32.isNative - boolean(true)
+
+ToolAPI.blockData.81.material.multiplier - number(1.5)
+ToolAPI.blockData.81.material.name - string(plant)
+
+ToolAPI.blockData.81.level - number(0)
+ToolAPI.blockData.81.isNative - boolean(true)
+
+ToolAPI.blockData.106.material.multiplier - number(1.5)
+ToolAPI.blockData.106.material.name - string(plant)
+
+ToolAPI.blockData.106.level - number(0)
+ToolAPI.blockData.106.isNative - boolean(true)
+
+ToolAPI.blockData.111.material.multiplier - number(1.5)
+ToolAPI.blockData.111.material.name - string(plant)
+
+ToolAPI.blockData.111.level - number(0)
+ToolAPI.blockData.111.isNative - boolean(true)
+
+ToolAPI.blockData.127.material.multiplier - number(1.5)
+ToolAPI.blockData.127.material.name - string(plant)
+
+ToolAPI.blockData.127.level - number(0)
+ToolAPI.blockData.127.isNative - boolean(true)
+
+ToolAPI.blockData.8.material.multiplier - number(999999999)
+ToolAPI.blockData.8.material.name - string(unbreaking)
+
+ToolAPI.blockData.8.level - number(0)
+ToolAPI.blockData.8.isNative - boolean(true)
+
+ToolAPI.blockData.9.material.multiplier - number(999999999)
+ToolAPI.blockData.9.material.name - string(unbreaking)
+
+ToolAPI.blockData.9.level - number(0)
+ToolAPI.blockData.9.isNative - boolean(true)
+
+ToolAPI.blockData.10.material.multiplier - number(999999999)
+ToolAPI.blockData.10.material.name - string(unbreaking)
+
+ToolAPI.blockData.10.level - number(0)
+ToolAPI.blockData.10.isNative - boolean(true)
+
+ToolAPI.blockData.11.material.multiplier - number(999999999)
+ToolAPI.blockData.11.material.name - string(unbreaking)
+
+ToolAPI.blockData.11.level - number(0)
+ToolAPI.blockData.11.isNative - boolean(true)
+
+ToolAPI.blockData.7.material.multiplier - number(999999999)
+ToolAPI.blockData.7.material.name - string(unbreaking)
+
+ToolAPI.blockData.7.level - number(0)
+ToolAPI.blockData.7.isNative - boolean(true)
+
+ToolAPI.blockData.95.material.multiplier - number(999999999)
+ToolAPI.blockData.95.material.name - string(unbreaking)
+
+ToolAPI.blockData.95.level - number(0)
+ToolAPI.blockData.95.isNative - boolean(true)
+
+
+ToolAPI.needDamagableItemFix - boolean(false)
+ToolAPI.addBlockMaterial (name, breakingMultiplier) 
+ToolAPI.addToolMaterial (name, material) 
+ToolAPI.registerTool (id, toolMaterial, blockMaterials, params) 
+ToolAPI.registerSword (id, toolMaterial, params) 
+ToolAPI.registerBlockMaterial (uid, materialName, level, isNative) 
+ToolAPI.registerBlockDiggingLevel (uid, level) 
+ToolAPI.registerBlockMaterialAsArray (materialName, UIDs, isNative) 
+ToolAPI.refresh () 
+ToolAPI.getBlockData (blockID) 
+ToolAPI.getBlockMaterial (blockID) 
+ToolAPI.getBlockDestroyLevel (blockID) 
+ToolAPI.getEnchantExtraData (enchant) 
+ToolAPI.fortuneDropModifier (drop, level) 
+ToolAPI.getDestroyTimeViaTool (fullBlock, toolItem, coords, ignoreNative) 
+ToolAPI.getToolData (itemID) 
+ToolAPI.getToolLevel (itemID) 
+ToolAPI.getToolLevelViaBlock (itemID, blockID) 
+ToolAPI.getCarriedToolData () 
+ToolAPI.getCarriedToolLevel () 
+ToolAPI.startDestroyHook (coords, block, carried) 
+ToolAPI.destroyBlockHook (coords, block, carried) 
+ToolAPI.LastAttackTime - number(0)
+ToolAPI.playerAttackHook (attackerPlayer, victimEntity, carried) 
+ToolAPI.resetEngine () 
+ToolAPI.dropExpOrbs (x, y, z, value) 
+ToolAPI.dropOreExp (coords, minVal, maxVal, modifier) 
+
+Armor.registerFuncs (id, funcs) 
+Armor.preventDamaging (id) 
+
+LiquidRegistry.liquidStorageSaverId - number(1306847136)
+LiquidRegistry.liquids.water.key - string(water)
+LiquidRegistry.liquids.water.name - string(water)
+LiquidRegistry.liquids.water.uiTextures.0 - string(_liquid_water_texture_0)
+
+LiquidRegistry.liquids.water.addUITexture (name) 
+LiquidRegistry.liquids.water.addModelTexture (name) 
+
+LiquidRegistry.liquids.lava.key - string(lava)
+LiquidRegistry.liquids.lava.name - string(lava)
+LiquidRegistry.liquids.lava.uiTextures.0 - string(_liquid_lava_texture_0)
+
+LiquidRegistry.liquids.lava.addUITexture (name) 
+LiquidRegistry.liquids.lava.addModelTexture (name) 
+
+LiquidRegistry.liquids.milk.key - string(milk)
+LiquidRegistry.liquids.milk.name - string(milk)
+LiquidRegistry.liquids.milk.uiTextures.0 - string(_liquid_milk_texture_0)
+
+LiquidRegistry.liquids.milk.addUITexture (name) 
+LiquidRegistry.liquids.milk.addModelTexture (name) 
+
+
+LiquidRegistry.registerLiquid (key, name, uiTextures, modelTextures) 
+LiquidRegistry.getLiquidData (key) 
+LiquidRegistry.isExists (key) 
+LiquidRegistry.getLiquidName (key) 
+LiquidRegistry.getLiquidUITexture (key, width, height) 
+LiquidRegistry.getLiquidUIBitmap (key, width, height) 
+LiquidRegistry.FullByEmpty.325:0:water.id - number(325)
+LiquidRegistry.FullByEmpty.325:0:water.data - number(8)
+
+LiquidRegistry.FullByEmpty.374:0:water.id - number(373)
+LiquidRegistry.FullByEmpty.374:0:water.data - number(0)
+
+LiquidRegistry.FullByEmpty.325:0:lava.id - number(325)
+LiquidRegistry.FullByEmpty.325:0:lava.data - number(10)
+
+LiquidRegistry.FullByEmpty.325:0:milk.id - number(325)
+LiquidRegistry.FullByEmpty.325:0:milk.data - number(1)
+
+
+LiquidRegistry.EmptyByFull.325:8.id - number(325)
+LiquidRegistry.EmptyByFull.325:8.data - number(0)
+LiquidRegistry.EmptyByFull.325:8.liquid - string(water)
+
+LiquidRegistry.EmptyByFull.373:0.id - number(374)
+LiquidRegistry.EmptyByFull.373:0.data - number(0)
+LiquidRegistry.EmptyByFull.373:0.liquid - string(water)
+
+LiquidRegistry.EmptyByFull.325:10.id - number(325)
+LiquidRegistry.EmptyByFull.325:10.data - number(0)
+LiquidRegistry.EmptyByFull.325:10.liquid - string(lava)
+
+LiquidRegistry.EmptyByFull.325:1.id - number(325)
+LiquidRegistry.EmptyByFull.325:1.data - number(0)
+LiquidRegistry.EmptyByFull.325:1.liquid - string(milk)
+
+
+LiquidRegistry.registerItem (liquid, empty, full) 
+LiquidRegistry.getEmptyItem (id, data) 
+LiquidRegistry.getItemLiquid (id, data) 
+LiquidRegistry.getFullItem (id, data, liquid) 
+LiquidRegistry.Storage (tileEntity) 
+
+Native.ArmorType.boots - number(3)
+Native.ArmorType.chestplate - number(1)
+Native.ArmorType.helmet - number(0)
+Native.ArmorType.leggings - number(2)
+
+Native.ItemCategory.DECORATION - number(2)
+Native.ItemCategory.FOOD - number(4)
+Native.ItemCategory.INTERNAL - number(0)
+Native.ItemCategory.MATERIAL - number(1)
+Native.ItemCategory.TOOL - number(3)
+
+Native.ParticleType.angryVillager - number(30)
+Native.ParticleType.bubble - number(1)
+Native.ParticleType.carrotboost - string(carrotboost)
+Native.ParticleType.cloud - number(4)
+Native.ParticleType.crit - number(2)
+Native.ParticleType.dripLava - number(22)
+Native.ParticleType.dripWater - number(21)
+Native.ParticleType.enchantmenttable - number(32)
+Native.ParticleType.fallingDust - number(23)
+Native.ParticleType.flame - number(6)
+Native.ParticleType.happyVillager - number(31)
+Native.ParticleType.heart - number(15)
+Native.ParticleType.hugeexplosion - number(13)
+Native.ParticleType.hugeexplosionSeed - number(12)
+Native.ParticleType.ink - number(27)
+Native.ParticleType.itemBreak - number(10)
+Native.ParticleType.largeexplode - number(5)
+Native.ParticleType.lava - number(7)
+Native.ParticleType.mobFlame - number(14)
+Native.ParticleType.note - number(34)
+Native.ParticleType.portal - number(18)
+Native.ParticleType.rainSplash - number(29)
+Native.ParticleType.redstone - number(9)
+Native.ParticleType.slime - number(28)
+Native.ParticleType.smoke - number(3)
+Native.ParticleType.smoke2 - number(8)
+Native.ParticleType.snowballpoof - number(11)
+Native.ParticleType.spell - number(24)
+Native.ParticleType.spell2 - number(25)
+Native.ParticleType.spell3 - number(26)
+Native.ParticleType.splash - number(19)
+Native.ParticleType.suspendedTown - number(17)
+Native.ParticleType.terrain - number(16)
+Native.ParticleType.waterWake - number(20)
+Native.ParticleType.witchspell - string(witchspell)
+
+Native.Color.AQUA - string(§b)
+Native.Color.BEGIN - string(§)
+Native.Color.BLACK - string(§0)
+Native.Color.BLUE - string(§9)
+Native.Color.BOLD - string(§l)
+Native.Color.DARK_AQUA - string(§3)
+Native.Color.DARK_BLUE - string(§1)
+Native.Color.DARK_GRAY - string(§8)
+Native.Color.DARK_GREEN - string(§2)
+Native.Color.DARK_PURPLE - string(§5)
+Native.Color.DARK_RED - string(§4)
+Native.Color.GOLD - string(§6)
+Native.Color.GRAY - string(§7)
+Native.Color.GREEN - string(§a)
+Native.Color.LIGHT_PURPLE - string(§d)
+Native.Color.RED - string(§c)
+Native.Color.RESET - string(§r)
+Native.Color.WHITE - string(§f)
+Native.Color.YELLOW - string(§e)
+
+Native.EntityType.ARROW - number(80)
+Native.EntityType.BAT - number(19)
+Native.EntityType.BLAZE - number(43)
+Native.EntityType.BOAT - number(90)
+Native.EntityType.CAVE_SPIDER - number(40)
+Native.EntityType.CHICKEN - number(10)
+Native.EntityType.COW - number(11)
+Native.EntityType.CREEPER - number(33)
+Native.EntityType.EGG - number(82)
+Native.EntityType.ENDERMAN - number(38)
+Native.EntityType.EXPERIENCE_ORB - number(69)
+Native.EntityType.EXPERIENCE_POTION - number(68)
+Native.EntityType.FALLING_BLOCK - number(66)
+Native.EntityType.FIREBALL - number(85)
+Native.EntityType.FISHING_HOOK - number(77)
+Native.EntityType.GHAST - number(41)
+Native.EntityType.IRON_GOLEM - number(20)
+Native.EntityType.ITEM - number(64)
+Native.EntityType.LAVA_SLIME - number(42)
+Native.EntityType.LIGHTNING_BOLT - number(93)
+Native.EntityType.MINECART - number(84)
+Native.EntityType.MUSHROOM_COW - number(16)
+Native.EntityType.OCELOT - number(22)
+Native.EntityType.PAINTING - number(83)
+Native.EntityType.PIG - number(12)
+Native.EntityType.PIG_ZOMBIE - number(36)
+Native.EntityType.PLAYER - number(63)
+Native.EntityType.POLAR_BEAR - number(28)
+Native.EntityType.PRIMED_TNT - number(65)
+Native.EntityType.RABBIT - number(18)
+Native.EntityType.SHEEP - number(13)
+Native.EntityType.SILVERFISH - number(39)
+Native.EntityType.SKELETON - number(34)
+Native.EntityType.SLIME - number(37)
+Native.EntityType.SMALL_FIREBALL - number(94)
+Native.EntityType.SNOWBALL - number(81)
+Native.EntityType.SNOW_GOLEM - number(21)
+Native.EntityType.SPIDER - number(35)
+Native.EntityType.SQUID - number(17)
+Native.EntityType.THROWN_POTION - number(86)
+Native.EntityType.VILLAGER - number(15)
+Native.EntityType.WOLF - number(14)
+Native.EntityType.ZOMBIE - number(32)
+Native.EntityType.ZOMBIE_VILLAGER - number(44)
+
+Native.MobRenderType.arrow - number(25)
+Native.MobRenderType.bat - number(10)
+Native.MobRenderType.blaze - number(18)
+Native.MobRenderType.boat - number(35)
+Native.MobRenderType.camera - number(48)
+Native.MobRenderType.chicken - number(5)
+Native.MobRenderType.cow - number(6)
+Native.MobRenderType.creeper - number(22)
+Native.MobRenderType.egg - number(28)
+Native.MobRenderType.enderman - number(24)
+Native.MobRenderType.expPotion - number(45)
+Native.MobRenderType.experienceOrb - number(40)
+Native.MobRenderType.fallingTile - number(33)
+Native.MobRenderType.fireball - number(37)
+Native.MobRenderType.fishHook - number(26)
+Native.MobRenderType.ghast - number(17)
+Native.MobRenderType.human - number(3)
+Native.MobRenderType.ironGolem - number(42)
+Native.MobRenderType.item - number(4)
+Native.MobRenderType.lavaSlime - number(16)
+Native.MobRenderType.lightningBolt - number(41)
+Native.MobRenderType.map - number(50)
+Native.MobRenderType.minecart - number(34)
+Native.MobRenderType.mushroomCow - number(7)
+Native.MobRenderType.ocelot - number(43)
+Native.MobRenderType.painting - number(32)
+Native.MobRenderType.pig - number(8)
+Native.MobRenderType.player - number(27)
+Native.MobRenderType.rabbit - number(46)
+Native.MobRenderType.sheep - number(9)
+Native.MobRenderType.silverfish - number(21)
+Native.MobRenderType.skeleton - number(19)
+Native.MobRenderType.slime - number(23)
+Native.MobRenderType.smallFireball - number(38)
+Native.MobRenderType.snowGolem - number(44)
+Native.MobRenderType.snowball - number(29)
+Native.MobRenderType.spider - number(20)
+Native.MobRenderType.squid - number(36)
+Native.MobRenderType.thrownPotion - number(31)
+Native.MobRenderType.tnt - number(2)
+Native.MobRenderType.unknownItem - number(30)
+Native.MobRenderType.villager - number(12)
+Native.MobRenderType.villagerZombie - number(39)
+Native.MobRenderType.witch - number(47)
+Native.MobRenderType.wolf - number(11)
+Native.MobRenderType.zombie - number(14)
+Native.MobRenderType.zombiePigman - number(15)
+
+Native.PotionEffect.absorption - number(22)
+Native.PotionEffect.blindness - number(15)
+Native.PotionEffect.confusion - number(9)
+Native.PotionEffect.damageBoost - number(5)
+Native.PotionEffect.damageResistance - number(11)
+Native.PotionEffect.digSlowdown - number(4)
+Native.PotionEffect.digSpeed - number(3)
+Native.PotionEffect.fireResistance - number(12)
+Native.PotionEffect.harm - number(7)
+Native.PotionEffect.heal - number(6)
+Native.PotionEffect.healthBoost - number(21)
+Native.PotionEffect.hunger - number(17)
+Native.PotionEffect.invisibility - number(14)
+Native.PotionEffect.jump - number(8)
+Native.PotionEffect.movementSlowdown - number(2)
+Native.PotionEffect.movementSpeed - number(1)
+Native.PotionEffect.nightVision - number(16)
+Native.PotionEffect.poison - number(19)
+Native.PotionEffect.regeneration - number(10)
+Native.PotionEffect.saturation - number(23)
+Native.PotionEffect.waterBreathing - number(13)
+Native.PotionEffect.weakness - number(18)
+Native.PotionEffect.wither - number(20)
+
+Native.Dimension.END - number(2)
+Native.Dimension.NETHER - number(1)
+Native.Dimension.NORMAL - number(0)
+
+Native.ItemAnimation.bow - number(4)
+Native.ItemAnimation.normal - number(0)
+
+Native.BlockSide.DOWN - number(0)
+Native.BlockSide.EAST - number(5)
+Native.BlockSide.NORTH - number(2)
+Native.BlockSide.SOUTH - number(3)
+Native.BlockSide.UP - number(1)
+Native.BlockSide.WEST - number(4)
+
+Native.Enchantment.AQUA_AFFINITY - number(7)
+Native.Enchantment.BANE_OF_ARTHROPODS - number(11)
+Native.Enchantment.BLAST_PROTECTION - number(3)
+Native.Enchantment.DEPTH_STRIDER - number(8)
+Native.Enchantment.EFFICIENCY - number(15)
+Native.Enchantment.FEATHER_FALLING - number(2)
+Native.Enchantment.FIRE_ASPECT - number(13)
+Native.Enchantment.FIRE_PROTECTION - number(1)
+Native.Enchantment.FLAME - number(21)
+Native.Enchantment.FORTUNE - number(18)
+Native.Enchantment.INFINITY - number(22)
+Native.Enchantment.KNOCKBACK - number(12)
+Native.Enchantment.LOOTING - number(14)
+Native.Enchantment.LUCK_OF_THE_SEA - number(23)
+Native.Enchantment.LURE - number(24)
+Native.Enchantment.POWER - number(19)
+Native.Enchantment.PROJECTILE_PROTECTION - number(4)
+Native.Enchantment.PROTECTION - number(0)
+Native.Enchantment.PUNCH - number(20)
+Native.Enchantment.RESPIRATION - number(6)
+Native.Enchantment.SHARPNESS - number(9)
+Native.Enchantment.SILK_TOUCH - number(16)
+Native.Enchantment.SMITE - number(10)
+Native.Enchantment.THORNS - number(5)
+Native.Enchantment.UNBREAKING - number(17)
+
+Native.EnchantType.all - number(16383)
+Native.EnchantType.axe - number(512)
+Native.EnchantType.book - number(16383)
+Native.EnchantType.bow - number(32)
+Native.EnchantType.fishingRod - number(4096)
+Native.EnchantType.flintAndSteel - number(256)
+Native.EnchantType.hoe - number(64)
+Native.EnchantType.pickaxe - number(1024)
+Native.EnchantType.shears - number(128)
+Native.EnchantType.shovel - number(2048)
+Native.EnchantType.weapon - number(16)
+
+Native.BlockRenderLayer.alpha - number(4099)
+Native.BlockRenderLayer.alpha_seasons - number(5)
+Native.BlockRenderLayer.alpha_single_side - number(4)
+Native.BlockRenderLayer.blend - number(6)
+Native.BlockRenderLayer.doubleside - number(2)
+Native.BlockRenderLayer.far - number(9)
+Native.BlockRenderLayer.opaque - number(0)
+Native.BlockRenderLayer.opaque_seasons - number(1)
+Native.BlockRenderLayer.seasons_far - number(10)
+Native.BlockRenderLayer.seasons_far_alpha - number(11)
+Native.BlockRenderLayer.water - number(7)
