@@ -26,6 +26,16 @@ var thirstScale = new ScalesRPG.Scale({
     }
 });
 
+Saver.addSavesScope("ThirstValue", 
+    function read(scope){
+        thirstScale.setValue((scope && scope.thirst)? parseInt(scope.thirst) : 20);
+    },
+    function save(){
+        let thirst = parseInt(thirstScale.getValue())
+        return {"thirst": thirst};
+    }
+); 
+
 
 var ticks = THIRST_TICKS;
 Callback.addCallback("tick", function(){
