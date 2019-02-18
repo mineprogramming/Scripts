@@ -1,6 +1,6 @@
 LIBRARY({
     name: "ThirstLib",
-    version: 2,
+    version: 3,
     shared: true,
     api: "CoreEngine"
 });
@@ -53,7 +53,7 @@ Callback.addCallback("tick", function(){
         ticks = THIRST_TICKS;
         if(loaded){
             if(thirstScale.getValue() <= 0){
-                Entity.setHealth(Player.get(), Entity.getHealth(Player.get()) - 1);
+                Entity.damageEntity(Player.get(), 1, "thirst");
             }
             else{
                 thirstScale.decrease();
